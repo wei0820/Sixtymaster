@@ -92,11 +92,32 @@
                                 <rect key="frame" x="32" y="64" width="350" height="463"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Go-UV-z4a">
+                                <rect key="frame" x="16" y="629" width="382" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title=" 籤詩語譯" id="9JL-IM-KaA"/>
+                                    <tabBarItem title=" 籤意分享" id="u8R-Pt-9AQ"/>
+                                    <tabBarItem title=" 籤詩故事" id="MaZ-Dp-1h2"/>
+                                    <tabBarItem title=" 解籤參考" id="vod-Wy-lLR"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="7Dh-hH-8Hr" id="ZBO-kV-AMm"/>
+                                </connections>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QSC-sH-Oal"/>
                     </view>
                     <navigationItem key="navigationItem" id="fFc-aJ-ha1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tabbar_item_1" destination="u8R-Pt-9AQ" id="P82-vc-Pln"/>
+                        <outlet property="tabbar_item_2" destination="u8R-Pt-9AQ" id="zzT-DY-Q9q"/>
+                        <outlet property="tabbar_item_3" destination="MaZ-Dp-1h2" id="PcA-x2-yTx"/>
+                        <outlet property="tabbar_item_4" destination="vod-Wy-lLR" id="SRU-qQ-Fdh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2JS-i4-5cZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
