@@ -89,32 +89,151 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-ml-eea">
-                                <rect key="frame" x="-3" y="64" width="420" height="900"/>
+                                <rect key="frame" x="-3" y="64" width="420" height="1000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYB-mM-K0M">
-                                        <rect key="frame" x="12" y="0.0" width="400" height="800"/>
+                                        <rect key="frame" x="8" y="49" width="400" height="2800"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJP-c1-hiE">
-                                                <rect key="frame" x="-7" y="408" width="414" height="176"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="u0D-H6-ejF">
+                                                <rect key="frame" x="81" y="20" width="239" height="380"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-ww-OXM">
+                                                <rect key="frame" x="70" y="408" width="240" height="2600"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <string key="text">第一籤【甲子】
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <mutableString key="label">第一籤【甲子】
  ○○○　○○○
 屬金利秋　宜其西方
 
 日出便見風雲散
 光明清淨照世間
 一向前途通大道
-萬事清吉保平安</string>
+萬事清吉保平安
+籤詩語譯
+
+日出便見風雲散
+只要太陽出來了，遮蔽天空的烏雲就會隨風而散。
+
+光明清淨照世間
+陽光普照大地般地，內心清靜並會充滿光明。
+
+一向前途通大道
+好好努力，會通往成功的道路。
+
+萬事清吉保平安
+只要循著正確的道路，有神明保佑，會平安順心的。
+
+ 籤意分享
+
+抽得此籤表示所問之事目前面臨著阻礙與困難，但是就像雲會散開，陽光會出來，事情的陰霾會掃去，而且神明會保佑，事情最後會平安順利的。
+
+ 籤詩故事
+
+一、朱德武入寺相分明：
+
+二、崔文德胡鳳嬌到家空成婚：
+
+三、包公請雷驚仁宗：
+
+宋朝的時候，由於人民為乾旱所苦，包公一心為民請到雷神，降下甘霖而五穀豐收，解除了災難，這件事驚動了京城裡仁宗皇帝。
+
+四、包公請雷驚仁宗（另一版本）：
+
+當包公要到開封任職，鑒於仁宗顧忌包公的能力，包公知道了就一再向仁宗保證，然而仁宗依然不放心，所以包公只好仰天請雷，以作為見証，結果沒多久就自天上落下雷來，使得仁宗受到了很大的驚嚇，所以讓包公任職，而沒有再質疑了。
+
+ 解籤參考
+
+很多籤詩都有『月出』的說明，本籤則是『日出』，日出的氣勢比月出更高。
+　
+
+既說『一向』、『清吉』，就表示本籤沒有勸導變易之意，得受本籤者維持既有方向不變，就是康莊大道。</mutableString>
+                                                </accessibility>
+                                                <mutableString key="text">第一籤【甲子】
+ ○○○　○○○
+屬金利秋　宜其西方
+
+日出便見風雲散
+光明清淨照世間
+一向前途通大道
+萬事清吉保平安
+籤詩語譯
+
+日出便見風雲散
+只要太陽出來了，遮蔽天空的烏雲就會隨風而散。
+
+光明清淨照世間
+陽光普照大地般地，內心清靜並會充滿光明。
+
+一向前途通大道
+好好努力，會通往成功的道路。
+
+萬事清吉保平安
+只要循著正確的道路，有神明保佑，會平安順心的。
+
+ 籤意分享
+
+抽得此籤表示所問之事目前面臨著阻礙與困難，但是就像雲會散開，陽光會出來，事情的陰霾會掃去，而且神明會保佑，事情最後會平安順利的。
+
+ 籤詩故事
+
+一、朱德武入寺相分明：
+
+二、崔文德胡鳳嬌到家空成婚：
+
+三、包公請雷驚仁宗：
+
+宋朝的時候，由於人民為乾旱所苦，包公一心為民請到雷神，降下甘霖而五穀豐收，解除了災難，這件事驚動了京城裡仁宗皇帝。
+
+四、包公請雷驚仁宗（另一版本）：
+
+當包公要到開封任職，鑒於仁宗顧忌包公的能力，包公知道了就一再向仁宗保證，然而仁宗依然不放心，所以包公只好仰天請雷，以作為見証，結果沒多久就自天上落下雷來，使得仁宗受到了很大的驚嚇，所以讓包公任職，而沒有再質疑了。
+
+ 解籤參考
+
+很多籤詩都有『月出』的說明，本籤則是『日出』，日出的氣勢比月出更高。
+　
+
+既說『一向』、『清吉』，就表示本籤沒有勸導變易之意，得受本籤者維持既有方向不變，就是康莊大道。
+
+
+籤解
+
+凡事　大吉昌。
+作事　難成。成者大吉。
+家事　無憂。
+家運　平安大吉。
+婚姻　允成。
+求兒　大吉。
+六甲　頭胎男。二胎女。
+求財　先大進。後小利。
+功名　望後有成。
+歲君　清吉。
+治病　未日(半月)痊安。
+出外　平安。
+經商　如意。
+來人　月光在。
+行舟　有大財。
+移居　得安。
+失物　在東急尋能還。
+求雨　尚未。
+官事　理斷分明。
+六畜　好。
+耕作　甚得利。
+築室　清吉光明。
+墳墓　地穴大吉。
+討海　漸漸得利。
+作塭　大吉利。
+魚苗　不畏。
+月令　遂意。
+尋人　得回。
+遠信　速至。</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="u0D-H6-ejF">
-                                                <rect key="frame" x="81" y="20" width="239" height="380"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="safeArea" id="vo9-Ak-GNJ"/>
@@ -122,7 +241,7 @@
                                 </subviews>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="0.0" height="900"/>
+                                        <size key="value" width="0.0" height="3500"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
