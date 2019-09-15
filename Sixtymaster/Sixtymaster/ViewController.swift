@@ -44,7 +44,6 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         let name = itemName[indexPath.row]
         print(name)
         if (name == itemName[0]){
-
             performSegue(withIdentifier: "one", sender: nil)
         }else if(name ==  itemName[1]){
             performSegue(withIdentifier: "two", sender: nil)
