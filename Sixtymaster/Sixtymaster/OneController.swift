@@ -17,6 +17,7 @@ class OneController: UIViewController,GADBannerViewDelegate , UITabBarDelegate,U
 
         // Do any additional setup after
         setAdBanner()
+
     }
     @IBOutlet weak var tabbar_item_1: UITabBarItem!
     @IBOutlet weak var tabbar_item_2: UITabBarItem!
@@ -117,7 +118,6 @@ class OneController: UIViewController,GADBannerViewDelegate , UITabBarDelegate,U
         }
     }
     func setActionSheep(){
-       
         alert =  UIActionSheet(title: "解籤", delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "4","9","3")
         alert?.show(in: self.view)
         
