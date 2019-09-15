@@ -47,6 +47,14 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
             performSegue(withIdentifier: "one", sender: nil)
         }else if(name ==  itemName[1]){
             performSegue(withIdentifier: "two", sender: nil)
+        }else if(name ==  itemName[2]){
+            performSegue(withIdentifier: "three", sender: nil)
+        }else if(name ==  itemName[3]){
+            performSegue(withIdentifier: "four", sender: nil)
+        }else if(name ==  itemName[4]){
+            performSegue(withIdentifier: "five", sender: nil)
+        }else if(name ==  itemName[5]){
+            performSegue(withIdentifier: "six", sender: nil)
         }
     }
     

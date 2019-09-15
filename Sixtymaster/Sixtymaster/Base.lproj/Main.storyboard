@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="1780" y="-68"/>
         </scene>
-        <!--View Controller-->
+        <!--Three Controller-->
         <scene sceneID="k58-xC-vMa">
             <objects>
-                <viewController id="BbW-MZ-hyW" sceneMemberID="viewController">
+                <viewController id="BbW-MZ-hyW" customClass="ThreeController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dWv-yK-13m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
