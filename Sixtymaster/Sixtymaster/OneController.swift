@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMobileAds
 
-class OneController: UIViewController,GADBannerViewDelegate , UITabBarDelegate,UIActionSheetDelegate{
+class OneController: UIViewController,GADBannerViewDelegate{
     var adBannerView: GADBannerView?
 
     override func viewDidLoad() {
@@ -19,11 +19,6 @@ class OneController: UIViewController,GADBannerViewDelegate , UITabBarDelegate,U
         setAdBanner()
 
     }
-    @IBOutlet weak var tabbar_item_1: UITabBarItem!
-    @IBOutlet weak var tabbar_item_2: UITabBarItem!
-    @IBOutlet weak var tabbar_item_3: UITabBarItem!
-    @IBOutlet weak var tabbar_item_4: UITabBarItem!
-    var alert : UIActionSheet?
     func setAdBanner(){
         let id = "ca-app-pub-7019441527375550/3838969590"
         adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
@@ -98,33 +93,5 @@ class OneController: UIViewController,GADBannerViewDelegate , UITabBarDelegate,U
     }
     */
 
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        
-        let tabIndex = tabBar.items?.index(of: item)
-
-        if tabIndex == 0 {
-            setActionSheep()
-        }else if tabIndex == 1 {
-            print("1")
-
-        }else if tabIndex == 2 {
-            print("2")
-
-            
-        }else if tabIndex == 3 {
-            print("3")
-
-            
-        }
-    }
-    func setActionSheep(){
-        alert =  UIActionSheet(title: "解籤", delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "4","9","3")
-        alert?.show(in: self.view)
-        
-    }
-    func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt buttonIndex: Int) {
-        print(buttonIndex)
-    }
-   
     
 }
