@@ -70,12 +70,29 @@
                     <view key="view" contentMode="scaleToFill" id="dWv-yK-13m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9be-fK-umn">
+                                <rect key="frame" x="0.0" y="64" width="414" height="2000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="0.0" height="3000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6iX-KW-3IM"/>
                     </view>
                     <navigationItem key="navigationItem" id="XsI-hh-i74"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhe-GV-0N0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="35N-zK-nz4">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="zHm-RR-a5C"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="2756" y="-882"/>
         </scene>
@@ -122,7 +139,7 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
-                                                    <mutableString key="label">第一籤【甲子】
+                                                    <string key="label">第一籤【甲子】
  ○○○　○○○
 屬金利秋　宜其西方
 
@@ -167,9 +184,9 @@
 很多籤詩都有『月出』的說明，本籤則是『日出』，日出的氣勢比月出更高。
 　
 
-既說『一向』、『清吉』，就表示本籤沒有勸導變易之意，得受本籤者維持既有方向不變，就是康莊大道。</mutableString>
+既說『一向』、『清吉』，就表示本籤沒有勸導變易之意，得受本籤者維持既有方向不變，就是康莊大道。</string>
                                                 </accessibility>
-                                                <mutableString key="text">第一籤【甲子】
+                                                <string key="text">第一籤【甲子】
  ○○○　○○○
 屬金利秋　宜其西方
 
@@ -248,7 +265,7 @@
 當包公要到開封任職，鑒於仁宗顧忌包公的能力，包公知道了就一再向仁宗保證，然而仁宗依然不放心，所以包公只好仰天請雷，以作為見証，結果沒多久就自天上落下雷來，使得仁宗受到了很大的驚嚇，所以讓包公任職，而沒有再質疑了。
 
 
-</mutableString>
+</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -298,7 +315,7 @@
                                                 <rect key="frame" x="80" y="408" width="240" height="2300"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">六十甲子籤
+                                                <string key="text">六十甲子籤
 
 第二籤【甲寅】
 ●○●　○ ●●
@@ -366,7 +383,7 @@
 
 籤詩應驗故事
 
-有孕婦祈求胎兒健康，得此籤。求籤時是夏天已有孕五個月，預產期正好是春天，果於春天順利生產，應了「若能遇得春色到」「一洒清吉脫塵埃」。</mutableString>
+有孕婦祈求胎兒健康，得此籤。求籤時是夏天已有孕五個月，預產期正好是春天，果於春天順利生產，應了「若能遇得春色到」「一洒清吉脫塵埃」。</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
