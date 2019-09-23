@@ -74,6 +74,91 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9be-fK-umn">
                                 <rect key="frame" x="0.0" y="64" width="414" height="2000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="35N-zK-nz4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="3UT-kr-Nst">
+                                                <rect key="frame" x="-93" y="48" width="600" height="600"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLy-bH-pBU">
+                                                <rect key="frame" x="87" y="685" width="240" height="2300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <mutableString key="text">六十甲子籤
+
+第三籤【甲辰】
+○○○　●○●
+屬火利夏　宜其南方
+
+勸君把定心莫虛
+天註衣祿自有餘
+和合重重常吉慶
+時來終遇得明珠
+
+衣祿二字，另有改作姻緣一說。
+
+籤解
+
+凡事　吉。
+作事　二次成。
+家事　餘興且喜。
+家運　和氣。後得祥瑞。
+婚姻　大吉。
+求兒　吉。
+六甲　先男後女。
+求財　後遇貴人大興。
+功名　後科連登。尾有。
+歲君　安和。
+治病　命不畏。平安。
+出外　向南方遇貴人。
+經商　先利平。後大財。
+來人　立即到。
+行舟　漸得大財。
+移居　得安
+失物　月光必在。
+求雨　過日自有。
+官事　不畏。破財。完局。
+六畜　可納。
+耕作　下冬好。
+築室　大吉。
+墳墓　永裕後崑。
+討海　晚有大利。
+作塭　和者必獲厚利。
+魚苗　後得大利。
+月令　漸得春風。
+尋人　得回。
+遠信　守候佳音。
+
+籤詩語譯
+
+勸君把定心莫虛
+勸你定下心來，不要胡思亂想、三心二意了。
+
+天註衣祿自有餘
+財富或姻緣等都是是上天注定的。
+
+和合重重常吉慶
+能相互配合，就可以順心如意。
+
+時來終遇得明珠
+等到時機來臨時，就能遇到自己心中所期待的結果（明珠）了。
+
+ 籤意分享
+
+目前處於搖擺不定、心意難安的局面。其實財富或緣分是上天注定好的，該是你的就會是你的，一定要有決心，選擇好方向誠心誠意、專心一致地努力，最後會得到您想要結果。
+
+若問感情得此籤，表示雖然目前和對方有許多的問題與阻礙，即使有分手之虞，但是若能雙方相互配合，專情、努力不放棄這段感情，最後會有情人終成眷屬。若已分手問復合，需雙方能檢討分手原因，能相互配合則復合可成。</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="zHm-RR-a5C"/>
+                                    </view>
+                                </subviews>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
                                         <size key="value" width="0.0" height="3000"/>
@@ -87,94 +172,6 @@
                     <navigationItem key="navigationItem" id="XsI-hh-i74"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhe-GV-0N0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="35N-zK-nz4">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="3UT-kr-Nst">
-                            <rect key="frame" x="-93" y="48" width="600" height="600"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLy-bH-pBU">
-                            <rect key="frame" x="87" y="685" width="240" height="2300"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <string key="text">六十甲子籤
-
-第二籤【甲寅】
-●○●　○ ●●
-屬水利冬　宜其北方
-
-於今此景正當時
-看看欲吐百花魁
-若能遇得春色到
-一洒清吉脫塵埃
-
-籤詩語譯
-
-於今此景正當時
-現在正是看眼前的景象的時候。
-
-看看欲吐百花魁
-看看花朵含苞待放。
-
-若能遇得春色到
-如果能夠遇到春天來臨。
-
-一洒清吉脫塵埃
-事情會如花朵綻放般地，能夠擺脫困難，順心吉祥。
-
- 籤意分享
-
-目前的處境猶如春天來之前的寒冬，雖然有種種磨難，但是以前的努力已經快要有成果了，只要繼續努力，會擺脫難關，成功時機會到來的。
-　
-
-若問事成時機「春色到」有指春天的意涵。
-
- 籤詩故事
-
- 籤解
-
-凡事　春天到。
-作事　春成美。冬不佳。
-家事　必得進益。
-家運　福祉茂盛。
-婚姻　永偕伉儷。
-求兒　適宜。
-六甲　生男。
-求財　如泉湧。(先有後無)
-功名　二次成。秋進連中。
-歲君　中和。
-治病　老不好。少平安。
-出外　春夏好。秋冬呆。
-經商　大吉利市。
-來人　南方。
-行舟　有大財。
-移居　平平。(不可)
-失物　謹尋在。遲者無。
-求雨　甲子日得有。
-官事　完局。
-六畜　興旺大利。
-耕作　春季如意。
-築室　大吉。
-墳墓　光前裕後。
-討海　春有冬無。
-作塭　可慶獲利。
-魚苗　大利。
-月令　不畏。
-尋人　南方。
-遠信　春天到。
-
-籤詩應驗故事
-
-有孕婦祈求胎兒健康，得此籤。求籤時是夏天已有孕五個月，預產期正好是春天，果於春天順利生產，應了「若能遇得春色到」「一洒清吉脫塵埃」。</string>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <viewLayoutGuide key="safeArea" id="zHm-RR-a5C"/>
-                </view>
             </objects>
             <point key="canvasLocation" x="2756" y="-882"/>
         </scene>
