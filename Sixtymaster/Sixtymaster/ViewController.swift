@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelegate ,UITableViewDataSource,UITableViewDelegate{
     @IBOutlet weak var sb: UISearchBar!
     @IBOutlet weak var tb: UITableView!
+    var name :String = ""
+    var item : Int = 0
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(isSearch){
             return arrSearch.count
@@ -41,7 +43,8 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         tableView.deselectRow(
             at: indexPath, animated: true)
         
-        let name = itemName[indexPath.row]
+        name = itemName[indexPath.row]
+        item = indexPath.row + 1
         print(name)
         if (name == itemName[0]){
             performSegue(withIdentifier: "one", sender: nil)
@@ -51,10 +54,8 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
             performSegue(withIdentifier: "three", sender: nil)
         }else if(name ==  itemName[3]){
             performSegue(withIdentifier: "four", sender: nil)
-        }else if(name ==  itemName[4]){
-            performSegue(withIdentifier: "five", sender: nil)
-        }else if(name ==  itemName[5]){
-            performSegue(withIdentifier: "six", sender: nil)
+        }else{
+            performSegue(withIdentifier: "four", sender: nil)
         }
     }
     
@@ -170,6 +171,13 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         }
         tb.reloadData()
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "four"{
+            let secondCV = segue.destination as! FourController
+            secondCV.item = self.item
+        }
+    
     }
 }
 

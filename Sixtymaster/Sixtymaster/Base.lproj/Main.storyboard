@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rVG-gH-RNS">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rVG-gH-RNS">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,107 +19,20 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fb-UQ-wd9">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="0.0" height="3000"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="sGj-vl-MeX"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="s7f-03-IKj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MAI-js-1zh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="J6w-YD-XJg">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <viewLayoutGuide key="safeArea" id="ReZ-t8-ktj"/>
-                </view>
-            </objects>
-            <point key="canvasLocation" x="1385" y="-796"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZGi-ti-On3">
-                                <rect key="frame" x="0.0" y="151" width="414" height="547"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="jln-VS-e9j">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jln-VS-e9j" id="AYx-Xv-ecW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bf4-S2-rt1"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NY0-Qg-od8"/>
-                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="4Gk-Q6-1zT"/>
-                                </connections>
-                            </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaP-Vw-A62">
-                                <rect key="frame" x="0.0" y="75" width="414" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BdA-Rj-BOm"/>
-                                </connections>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kA7-Xv-WGs"/>
-                    <connections>
-                        <outlet property="sb" destination="IaP-Vw-A62" id="7ab-UZ-N1U"/>
-                        <outlet property="tb" destination="ZGi-ti-On3" id="e3i-WY-eIZ"/>
-                        <segue destination="7Dh-hH-8Hr" kind="push" identifier="one" id="Z1E-yu-rvp"/>
-                        <segue destination="s0L-P6-f50" kind="push" identifier="two" id="ADM-kL-lvS"/>
-                        <segue destination="BbW-MZ-hyW" kind="push" identifier="three" id="yRV-XM-Ep0"/>
-                        <segue destination="t86-aR-qf6" kind="push" identifier="four" id="A71-T6-8EW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1780" y="-68"/>
-        </scene>
-        <!--Three Controller-->
-        <scene sceneID="k58-xC-vMa">
-            <objects>
-                <viewController id="BbW-MZ-hyW" customClass="ThreeController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dWv-yK-13m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9be-fK-umn">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="35N-zK-nz4">
+                                    <view contentMode="scaleToFill" id="J6w-YD-XJg">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="3UT-kr-Nst">
-                                                <rect key="frame" x="-93" y="48" width="600" height="600"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="gf1-lq-R0Z">
+                                                <rect key="frame" x="-93" y="44" width="600" height="600"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLy-bH-pBU">
-                                                <rect key="frame" x="87" y="685" width="240" height="2300"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3J-6b-V09">
+                                                <rect key="frame" x="87" y="652" width="240" height="2300"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">六十甲子籤
+                                                <string key="text">六十甲子籤
 
 第三籤【甲辰】
 ○○○　●○●
@@ -184,7 +95,173 @@
 
 目前處於搖擺不定、心意難安的局面。其實財富或緣分是上天注定好的，該是你的就會是你的，一定要有決心，選擇好方向誠心誠意、專心一致地努力，最後會得到您想要結果。
 
-若問感情得此籤，表示雖然目前和對方有許多的問題與阻礙，即使有分手之虞，但是若能雙方相互配合，專情、努力不放棄這段感情，最後會有情人終成眷屬。若已分手問復合，需雙方能檢討分手原因，能相互配合則復合可成。</mutableString>
+若問感情得此籤，表示雖然目前和對方有許多的問題與阻礙，即使有分手之虞，但是若能雙方相互配合，專情、努力不放棄這段感情，最後會有情人終成眷屬。若已分手問復合，需雙方能檢討分手原因，能相互配合則復合可成。</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="ReZ-t8-ktj"/>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="0.0" height="3000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sGj-vl-MeX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s7f-03-IKj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MAI-js-1zh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="-796"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZGi-ti-On3">
+                                <rect key="frame" x="0.0" y="151" width="414" height="547"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="jln-VS-e9j">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jln-VS-e9j" id="AYx-Xv-ecW">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bf4-S2-rt1"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NY0-Qg-od8"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="4Gk-Q6-1zT"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaP-Vw-A62">
+                                <rect key="frame" x="0.0" y="75" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BdA-Rj-BOm"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kA7-Xv-WGs"/>
+                    <connections>
+                        <outlet property="sb" destination="IaP-Vw-A62" id="7ab-UZ-N1U"/>
+                        <outlet property="tb" destination="ZGi-ti-On3" id="e3i-WY-eIZ"/>
+                        <segue destination="7Dh-hH-8Hr" kind="push" identifier="one" id="Z1E-yu-rvp"/>
+                        <segue destination="s0L-P6-f50" kind="push" identifier="two" id="ADM-kL-lvS"/>
+                        <segue destination="BbW-MZ-hyW" kind="push" identifier="three" id="yRV-XM-Ep0"/>
+                        <segue destination="t86-aR-qf6" kind="push" identifier="four" id="A71-T6-8EW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="-68"/>
+        </scene>
+        <!--Three Controller-->
+        <scene sceneID="k58-xC-vMa">
+            <objects>
+                <viewController id="BbW-MZ-hyW" customClass="ThreeController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dWv-yK-13m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9be-fK-umn">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="35N-zK-nz4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="3UT-kr-Nst">
+                                                <rect key="frame" x="-93" y="48" width="600" height="600"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLy-bH-pBU">
+                                                <rect key="frame" x="87" y="685" width="240" height="2300"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">六十甲子籤
+
+第三籤【甲辰】
+○○○　●○●
+屬火利夏　宜其南方
+
+勸君把定心莫虛
+天註衣祿自有餘
+和合重重常吉慶
+時來終遇得明珠
+
+衣祿二字，另有改作姻緣一說。
+
+籤解
+
+凡事　吉。
+作事　二次成。
+家事　餘興且喜。
+家運　和氣。後得祥瑞。
+婚姻　大吉。
+求兒　吉。
+六甲　先男後女。
+求財　後遇貴人大興。
+功名　後科連登。尾有。
+歲君　安和。
+治病　命不畏。平安。
+出外　向南方遇貴人。
+經商　先利平。後大財。
+來人　立即到。
+行舟　漸得大財。
+移居　得安
+失物　月光必在。
+求雨　過日自有。
+官事　不畏。破財。完局。
+六畜　可納。
+耕作　下冬好。
+築室　大吉。
+墳墓　永裕後崑。
+討海　晚有大利。
+作塭　和者必獲厚利。
+魚苗　後得大利。
+月令　漸得春風。
+尋人　得回。
+遠信　守候佳音。
+
+籤詩語譯
+
+勸君把定心莫虛
+勸你定下心來，不要胡思亂想、三心二意了。
+
+天註衣祿自有餘
+財富或姻緣等都是是上天注定的。
+
+和合重重常吉慶
+能相互配合，就可以順心如意。
+
+時來終遇得明珠
+等到時機來臨時，就能遇到自己心中所期待的結果（明珠）了。
+
+ 籤意分享
+
+目前處於搖擺不定、心意難安的局面。其實財富或緣分是上天注定好的，該是你的就會是你的，一定要有決心，選擇好方向誠心誠意、專心一致地努力，最後會得到您想要結果。
+
+若問感情得此籤，表示雖然目前和對方有許多的問題與阻礙，即使有分手之虞，但是若能雙方相互配合，專情、努力不放棄這段感情，最後會有情人終成眷屬。若已分手問復合，需雙方能檢討分手原因，能相互配合則復合可成。</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -215,7 +292,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rVG-gH-RNS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5xT-gg-Iei">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -526,5 +603,6 @@
         <image name="1" width="400" height="870"/>
         <image name="2" width="400" height="870"/>
         <image name="3" width="400" height="870"/>
+        <image name="4" width="400" height="870"/>
     </resources>
 </document>

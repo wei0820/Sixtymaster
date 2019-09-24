@@ -11,13 +11,22 @@ import GoogleMobileAds
 
 class FourController: UIViewController ,GADBannerViewDelegate  {
     var adBannerView: GADBannerView?
+    var titleName: String = ""
+    var item : Int = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setAdBanner()
+        getType()
 
         // Do any additional setup after loading the view.
     }
-    
+    func getType(){
+        
+        print("type")
+
+        print(item)
+    }
 
     /*
     // MARK: - Navigation
