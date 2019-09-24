@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7951A9F7A7F6E5AFEAED1347 /* Pods_Sixtymaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C212A2A0479FB4826CDB8 /* Pods_Sixtymaster.framework */; };
+		8E815265233A131A003C7CCD /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E815264233A131A003C7CCD /* ItemClass.swift */; };
 		8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8CCD2338B0BD001630F6 /* FourController.swift */; };
 		B71D7B6322096A4900D85E81 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D7B6222096A4900D85E81 /* OneController.swift */; };
 		B71D7B652209AA1500D85E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71D7B642209AA1500D85E81 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		2E2C212A2A0479FB4826CDB8 /* Pods_Sixtymaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sixtymaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		448C8FF19E9B2CCC844F5841 /* Pods-Sixtymaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.debug.xcconfig"; sourceTree = "<group>"; };
+		8E815264233A131A003C7CCD /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 		8E8D8CCD2338B0BD001630F6 /* FourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourController.swift; sourceTree = "<group>"; };
 		A90186037C19F99C4DD0550C /* Pods-Sixtymaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.release.xcconfig"; sourceTree = "<group>"; };
 		B71D7B6222096A4900D85E81 /* OneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				B7A64D84232E27060021DFC8 /* TwoController.swift */,
 				B7A64D86232E3DE20021DFC8 /* ThreeController.swift */,
 				8E8D8CCD2338B0BD001630F6 /* FourController.swift */,
+				8E815264233A131A003C7CCD /* ItemClass.swift */,
 			);
 			path = Sixtymaster;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E815265233A131A003C7CCD /* ItemClass.swift in Sources */,
 				B7A64D85232E27060021DFC8 /* TwoController.swift in Sources */,
 				B7FDDC8B2209418900318481 /* ViewController.swift in Sources */,
 				B71D7B6322096A4900D85E81 /* OneController.swift in Sources */,
