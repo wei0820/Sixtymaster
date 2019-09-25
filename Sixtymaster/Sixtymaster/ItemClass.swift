@@ -7,12 +7,25 @@
 //
 
 import Foundation
-
+import UIKit
 class itemClass {
     let mImageId = 0
     let mMessageItem = ""
     
-    static func setImageView(){
+    static func selectItem(item : Int){
+        switch item {
+        case 4:
+            print(4)
+            
+        default:
+        print("else")
+
+        }
+        
+    }
+    
+    static func setImageView(myImageView: UIImageView,item : Int){
+            
         
     }
 }

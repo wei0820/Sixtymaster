@@ -23,9 +23,10 @@ class FourController: UIViewController ,GADBannerViewDelegate  {
     }
     func getType(){
         
-        print("type")
 
+        print()
         print(item)
+        
     }
 
     /*
