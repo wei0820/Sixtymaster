@@ -22,7 +22,7 @@ class itemClass {
     }
     
     static func setUITextView(mUITextView : UITextView,item :Int){
-        mUITextView.text = NSLocalizedString("+item+", comment: "")
+        mUITextView.text = NSLocalizedString(String(item), comment: "")
         
     }
     
