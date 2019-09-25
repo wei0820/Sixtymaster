@@ -32,7 +32,7 @@ class FourController: UIViewController ,GADBannerViewDelegate  {
     }
     func getType(){
         itemClass.setImageView(myImageView: mUIImageView, item: item)
-        
+        itemClass.setUITextView(mUITextView: mTextView, item: item)
     }
 
     /*
