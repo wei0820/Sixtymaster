@@ -12,11 +12,10 @@ class itemClass {
     let mImageId = 0
     let mMessageItem = ""
     
-    static func selectItem(item : Int){
+    static func selectItem(myImageView: UIImageView,item : Int){
         switch item {
         case 4:
-            print(4)
-            
+            setImageView(myImageView: myImageView,item: item)
         default:
         print("else")
 
@@ -25,7 +24,6 @@ class itemClass {
     }
     
     static func setImageView(myImageView: UIImageView,item : Int){
-            
-        
+        myImageView.image = (UIImage(named: String(item)))
     }
 }
