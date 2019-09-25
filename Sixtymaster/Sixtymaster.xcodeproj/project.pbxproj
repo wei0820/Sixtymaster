@@ -10,6 +10,7 @@
 		7951A9F7A7F6E5AFEAED1347 /* Pods_Sixtymaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C212A2A0479FB4826CDB8 /* Pods_Sixtymaster.framework */; };
 		8E815265233A131A003C7CCD /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E815264233A131A003C7CCD /* ItemClass.swift */; };
 		8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8CCD2338B0BD001630F6 /* FourController.swift */; };
+		8ECC4EC0233B403300393BBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC4EBF233B403300393BBB /* GoogleService-Info.plist */; };
 		B71D7B6322096A4900D85E81 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D7B6222096A4900D85E81 /* OneController.swift */; };
 		B71D7B652209AA1500D85E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71D7B642209AA1500D85E81 /* Assets.xcassets */; };
 		B7A64D85232E27060021DFC8 /* TwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A64D84232E27060021DFC8 /* TwoController.swift */; };
@@ -25,6 +26,7 @@
 		448C8FF19E9B2CCC844F5841 /* Pods-Sixtymaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.debug.xcconfig"; sourceTree = "<group>"; };
 		8E815264233A131A003C7CCD /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 		8E8D8CCD2338B0BD001630F6 /* FourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourController.swift; sourceTree = "<group>"; };
+		8ECC4EBF233B403300393BBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A90186037C19F99C4DD0550C /* Pods-Sixtymaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.release.xcconfig"; sourceTree = "<group>"; };
 		B71D7B6222096A4900D85E81 /* OneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneController.swift; sourceTree = "<group>"; };
 		B71D7B642209AA1500D85E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				B7FDDC8C2209418900318481 /* Main.storyboard */,
 				B7FDDC912209418A00318481 /* LaunchScreen.storyboard */,
 				B7FDDC942209418A00318481 /* Info.plist */,
+				8ECC4EBF233B403300393BBB /* GoogleService-Info.plist */,
 				B71D7B6222096A4900D85E81 /* OneController.swift */,
 				B71D7B642209AA1500D85E81 /* Assets.xcassets */,
 				B7A64D84232E27060021DFC8 /* TwoController.swift */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7FDDC932209418A00318481 /* LaunchScreen.storyboard in Resources */,
+				8ECC4EC0233B403300393BBB /* GoogleService-Info.plist in Resources */,
 				B71D7B652209AA1500D85E81 /* Assets.xcassets in Resources */,
 				B7FDDC8E2209418900318481 /* Main.storyboard in Resources */,
 			);
