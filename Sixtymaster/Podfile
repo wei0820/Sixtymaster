@@ -1,6 +1,6 @@
 pod 'Firebase/Analytics'
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '11.0'
 
 target 'Sixtymaster' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -9,4 +9,5 @@ target 'Sixtymaster' do
   # Pods for Sixtymaster
 pod 'Firebase/Core'
 pod 'Firebase/AdMob'
+pod 'Firebase'
 end
