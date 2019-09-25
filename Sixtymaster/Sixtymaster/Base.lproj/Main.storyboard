@@ -115,6 +115,10 @@
                         <viewLayoutGuide key="safeArea" id="sGj-vl-MeX"/>
                     </view>
                     <navigationItem key="navigationItem" id="s7f-03-IKj"/>
+                    <connections>
+                        <outlet property="mTextView" destination="p3J-6b-V09" id="338-qv-IGg"/>
+                        <outlet property="mUIImageView" destination="gf1-lq-R0Z" id="00I-db-X00"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAI-js-1zh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

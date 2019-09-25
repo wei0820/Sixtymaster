@@ -13,14 +13,7 @@ class itemClass {
     let mMessageItem = ""
     
     static func selectItem(myImageView: UIImageView,item : Int){
-        switch item {
-        case 4:
-            setImageView(myImageView: myImageView,item: item)
-        default:
-        print("else")
-
-        }
-        
+        setImageView(myImageView: myImageView,item: item)
     }
     
     static func setImageView(myImageView: UIImageView,item : Int){

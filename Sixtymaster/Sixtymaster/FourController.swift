@@ -12,6 +12,8 @@ import GoogleMobileAds
 class FourController: UIViewController ,GADBannerViewDelegate  {
     var adBannerView: GADBannerView?
     var titleName: String = ""
+    @IBOutlet weak var mUIImageView: UIImageView!
+    @IBOutlet weak var mTextView: UITextView!
     var item : Int = 0
 
     override func viewDidLoad() {
@@ -22,10 +24,7 @@ class FourController: UIViewController ,GADBannerViewDelegate  {
         // Do any additional setup after loading the view.
     }
     func getType(){
-        
-
-        print()
-        print(item)
+        itemClass.setImageView(myImageView: mUIImageView, item: item)
         
     }
 
