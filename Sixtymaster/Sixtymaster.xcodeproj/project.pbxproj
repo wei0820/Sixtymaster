@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7951A9F7A7F6E5AFEAED1347 /* Pods_Sixtymaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2C212A2A0479FB4826CDB8 /* Pods_Sixtymaster.framework */; };
+		238F60AC1D71171B37F3E9CC /* Pods_Sixtymaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFDB750A33AD06A9083B0DAA /* Pods_Sixtymaster.framework */; };
+		8E815265233A131A003C7CCD /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E815264233A131A003C7CCD /* ItemClass.swift */; };
+		8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8CCD2338B0BD001630F6 /* FourController.swift */; };
+		8ECC4EC3233B55EE00393BBB /* SignPoetry.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC4EC5233B55EE00393BBB /* SignPoetry.strings */; };
 		B71D7B6322096A4900D85E81 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D7B6222096A4900D85E81 /* OneController.swift */; };
 		B71D7B652209AA1500D85E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71D7B642209AA1500D85E81 /* Assets.xcassets */; };
+		B7300657233BD20100EDD087 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7300656233BD20100EDD087 /* GoogleService-Info.plist */; };
 		B7A64D85232E27060021DFC8 /* TwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A64D84232E27060021DFC8 /* TwoController.swift */; };
 		B7A64D87232E3DE20021DFC8 /* ThreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A64D86232E3DE20021DFC8 /* ThreeController.swift */; };
 		B7FDDC892209418900318481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDDC882209418900318481 /* AppDelegate.swift */; };
@@ -19,11 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E2C212A2A0479FB4826CDB8 /* Pods_Sixtymaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sixtymaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		448C8FF19E9B2CCC844F5841 /* Pods-Sixtymaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.debug.xcconfig"; sourceTree = "<group>"; };
-		A90186037C19F99C4DD0550C /* Pods-Sixtymaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.release.xcconfig"; sourceTree = "<group>"; };
+		5B709C312B4EECF5C32826D0 /* Pods-Sixtymaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.release.xcconfig"; sourceTree = "<group>"; };
+		8E815264233A131A003C7CCD /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
+		8E8D8CCD2338B0BD001630F6 /* FourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourController.swift; sourceTree = "<group>"; };
+		8ECC4EC4233B55EE00393BBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SignPoetry.strings; sourceTree = "<group>"; };
 		B71D7B6222096A4900D85E81 /* OneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneController.swift; sourceTree = "<group>"; };
 		B71D7B642209AA1500D85E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7300656233BD20100EDD087 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7A64D84232E27060021DFC8 /* TwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoController.swift; sourceTree = "<group>"; };
 		B7A64D86232E3DE20021DFC8 /* ThreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeController.swift; sourceTree = "<group>"; };
 		B7FDDC852209418900318481 /* Sixtymaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sixtymaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +38,8 @@
 		B7FDDC8D2209418900318481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7FDDC922209418A00318481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7FDDC942209418A00318481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC9ACD154CB6CDA52DEF5598 /* Pods-Sixtymaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.debug.xcconfig"; sourceTree = "<group>"; };
+		BFDB750A33AD06A9083B0DAA /* Pods_Sixtymaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sixtymaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +47,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7951A9F7A7F6E5AFEAED1347 /* Pods_Sixtymaster.framework in Frameworks */,
+				238F60AC1D71171B37F3E9CC /* Pods_Sixtymaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		102792660D21D28562D34257 /* Pods */ = {
+		0AF43D7251E4D740AE9419AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				448C8FF19E9B2CCC844F5841 /* Pods-Sixtymaster.debug.xcconfig */,
-				A90186037C19F99C4DD0550C /* Pods-Sixtymaster.release.xcconfig */,
+				BFDB750A33AD06A9083B0DAA /* Pods_Sixtymaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BC9C8251C5A0F23CE474381 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC9ACD154CB6CDA52DEF5598 /* Pods-Sixtymaster.debug.xcconfig */,
+				5B709C312B4EECF5C32826D0 /* Pods-Sixtymaster.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -60,8 +76,8 @@
 			children = (
 				B7FDDC872209418900318481 /* Sixtymaster */,
 				B7FDDC862209418900318481 /* Products */,
-				102792660D21D28562D34257 /* Pods */,
-				E1A781E555030A7BD621C0CF /* Frameworks */,
+				2BC9C8251C5A0F23CE474381 /* Pods */,
+				0AF43D7251E4D740AE9419AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +92,7 @@
 		B7FDDC872209418900318481 /* Sixtymaster */ = {
 			isa = PBXGroup;
 			children = (
+				B7300656233BD20100EDD087 /* GoogleService-Info.plist */,
 				B7FDDC882209418900318481 /* AppDelegate.swift */,
 				B7FDDC8A2209418900318481 /* ViewController.swift */,
 				B7FDDC8C2209418900318481 /* Main.storyboard */,
@@ -85,16 +102,11 @@
 				B71D7B642209AA1500D85E81 /* Assets.xcassets */,
 				B7A64D84232E27060021DFC8 /* TwoController.swift */,
 				B7A64D86232E3DE20021DFC8 /* ThreeController.swift */,
+				8E8D8CCD2338B0BD001630F6 /* FourController.swift */,
+				8E815264233A131A003C7CCD /* ItemClass.swift */,
+				8ECC4EC5233B55EE00393BBB /* SignPoetry.strings */,
 			);
 			path = Sixtymaster;
-			sourceTree = "<group>";
-		};
-		E1A781E555030A7BD621C0CF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2E2C212A2A0479FB4826CDB8 /* Pods_Sixtymaster.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,11 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7FDDC972209418A00318481 /* Build configuration list for PBXNativeTarget "Sixtymaster" */;
 			buildPhases = (
-				0D2DF0870D487982A2856772 /* [CP] Check Pods Manifest.lock */,
+				E4545C19456669D4C9572BEF /* [CP] Check Pods Manifest.lock */,
 				B7FDDC812209418900318481 /* Sources */,
 				B7FDDC822209418900318481 /* Frameworks */,
 				B7FDDC832209418900318481 /* Resources */,
-				64D615B2B7CE18A641504E88 /* [CP] Embed Pods Frameworks */,
+				2D5523E07AC3B0130CB3AB5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECC4EC3233B55EE00393BBB /* SignPoetry.strings in Resources */,
 				B7FDDC932209418A00318481 /* LaunchScreen.storyboard in Resources */,
+				B7300657233BD20100EDD087 /* GoogleService-Info.plist in Resources */,
 				B71D7B652209AA1500D85E81 /* Assets.xcassets in Resources */,
 				B7FDDC8E2209418900318481 /* Main.storyboard in Resources */,
 			);
@@ -166,29 +180,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D2DF0870D487982A2856772 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Sixtymaster-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64D615B2B7CE18A641504E88 /* [CP] Embed Pods Frameworks */ = {
+		2D5523E07AC3B0130CB3AB5A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,6 +204,28 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E4545C19456669D4C9572BEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sixtymaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,9 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E815265233A131A003C7CCD /* ItemClass.swift in Sources */,
 				B7A64D85232E27060021DFC8 /* TwoController.swift in Sources */,
 				B7FDDC8B2209418900318481 /* ViewController.swift in Sources */,
 				B71D7B6322096A4900D85E81 /* OneController.swift in Sources */,
+				8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */,
 				B7FDDC892209418900318481 /* AppDelegate.swift in Sources */,
 				B7A64D87232E3DE20021DFC8 /* ThreeController.swift in Sources */,
 			);
@@ -230,6 +246,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8ECC4EC5233B55EE00393BBB /* SignPoetry.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ECC4EC4233B55EE00393BBB /* en */,
+			);
+			name = SignPoetry.strings;
+			sourceTree = "<group>";
+		};
 		B7FDDC8C2209418900318481 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -355,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -367,7 +391,7 @@
 		};
 		B7FDDC982209418A00318481 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 448C8FF19E9B2CCC844F5841 /* Pods-Sixtymaster.debug.xcconfig */;
+			baseConfigurationReference = BC9ACD154CB6CDA52DEF5598 /* Pods-Sixtymaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,7 +410,7 @@
 		};
 		B7FDDC992209418A00318481 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A90186037C19F99C4DD0550C /* Pods-Sixtymaster.release.xcconfig */;
+			baseConfigurationReference = 5B709C312B4EECF5C32826D0 /* Pods-Sixtymaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

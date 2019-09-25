@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>216149592581-oijubukkvodmuc9nbbskm4cd1g4j7rpk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.216149592581-oijubukkvodmuc9nbbskm4cd1g4j7rpk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCVDBma4Y0D2ECMVvftoBD53BUMz_m-snc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>216149592581</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jackpan.Sixtymaster</string>
+	<key>PROJECT_ID</key>
+	<string>sixtymaster</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sixtymaster.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:216149592581:ios:e58093d18c4cfe2880aa6c</string>
+	<key>DATABASE_URL</key>
+	<string>https://sixtymaster.firebaseio.com</string>
+</dict>
+</plist>
