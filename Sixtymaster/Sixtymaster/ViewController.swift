@@ -80,12 +80,27 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
             overrideUserInterfaceStyle = .light
 
         }
+        setRightButton(s: "登入")
+     
         setAdBanner()
         
         
         
     }
-
+    func setRightButton(s: String){
+        // 導覽列右邊按鈕
+             let rightButton = UIBarButtonItem(
+               title:"設定",
+               style:.plain,
+               target:self,
+               action:#selector(ViewController.setting))
+             // 加到導覽列中
+             self.navigationItem.rightBarButtonItem = rightButton
+        
+    }
+    @objc func setting() {
+    }
+  
     func setAdBanner(){
         let id = "ca-app-pub-7019441527375550/6790180968"
         adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
