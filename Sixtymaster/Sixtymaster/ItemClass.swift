@@ -199,11 +199,27 @@ class itemClass {
         case 60:
             mUITextView.text = ""
         case 61:
-            mUITextView.text = ""
+            mUITextView.text = """
+            此張頭籤表示祝福之意，拿到這支籤暗示百事皆成，所以神明讓占卜者添個香油錢意思意思即可。若卜者仍覺得疑惑沒有獲得解決，可以再抽一張籤詢問。有的廟宇認為抽到這張籤之後，還必須再抽一張，因為此籤類似平安符性質，不等於跟信徒解釋清楚疑難問題，所以還需再抽。至於這張頭籤可以收起來當護符使用，要不要過爐，則視廟方規定。
+            """
         case 62:
-            mUITextView.text = ""
+            mUITextView.text = """
+            籤　解
+            百事皆吉
+            求財大利
+            耕作大收
+            經商有利
+            家運平安
+            運途好
+            功名有望
+            婚姻可成
+            """
         case 63:
-            mUITextView.text = ""
+            mUITextView.text = """
+            任祈所求皆大吉　一向前途振輝騰
+
+            求得籤王萬事成　添油三斤點佛燈
+            """
         default:
             mUITextView.text = ""
             
