@@ -278,6 +278,7 @@
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
                                         <size key="value" width="0.0" height="3000"/>
                                     </userDefinedRuntimeAttribute>
+>>>>>>> cd04f466768b8c58b35b91ce28a7702570486599
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
@@ -285,6 +286,11 @@
                         <viewLayoutGuide key="safeArea" id="6iX-KW-3IM"/>
                     </view>
                     <navigationItem key="navigationItem" id="XsI-hh-i74"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                            <size key="value" width="0.0" height="3000"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhe-GV-0N0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
