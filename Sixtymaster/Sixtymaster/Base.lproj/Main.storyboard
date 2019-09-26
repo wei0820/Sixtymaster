@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rVG-gH-RNS">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -278,7 +277,6 @@
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
                                         <size key="value" width="0.0" height="3000"/>
                                     </userDefinedRuntimeAttribute>
->>>>>>> cd04f466768b8c58b35b91ce28a7702570486599
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
                         </subviews>
@@ -295,6 +293,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhe-GV-0N0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2756" y="-882"/>
+        </scene>
+        <!--Member Controller-->
+        <scene sceneID="CZ2-z4-jBk">
+            <objects>
+                <viewController storyboardIdentifier="member" id="g7K-Qq-lrf" customClass="MemberController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fkN-61-CCK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mgo-eo-xjw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fa3-yY-Usb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="600"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEr-O9-Vt9">

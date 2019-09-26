@@ -99,7 +99,14 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         
     }
     @objc func setting() {
+        if let controller = storyboard?.instantiateViewController(withIdentifier: "member"){
+            present(controller, animated: false) {
+                
+            }
+
+        }
     }
+    
   
     func setAdBanner(){
         let id = "ca-app-pub-7019441527375550/6790180968"
