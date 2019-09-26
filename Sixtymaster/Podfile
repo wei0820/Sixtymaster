@@ -10,4 +10,6 @@ target 'Sixtymaster' do
 pod 'Firebase/Core'
 pod 'Firebase/AdMob'
 pod 'Firebase'
+pod 'FirebaseUI'
+
 end

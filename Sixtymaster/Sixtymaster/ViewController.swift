@@ -8,6 +8,8 @@
 
 import UIKit
  import GoogleMobileAds
+import CommonCrypto
+
 class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelegate ,UITableViewDataSource,UITableViewDelegate{
     @IBOutlet weak var sb: UISearchBar!
     @IBOutlet weak var tb: UITableView!
@@ -100,7 +102,9 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
     }
     @objc func setting() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "member"){
-            present(controller, animated: false) {
+            present(controller, animated: true) {
+                print("2222")
+            
                 
             }
 
@@ -207,5 +211,7 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         }
     
     }
-}
+    
 
+
+}

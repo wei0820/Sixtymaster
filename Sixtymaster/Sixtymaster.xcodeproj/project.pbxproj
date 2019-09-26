@@ -124,6 +124,7 @@
 				B7FDDC822209418900318481 /* Frameworks */,
 				B7FDDC832209418900318481 /* Resources */,
 				55C72A5EE6621997E7E411B4 /* [CP] Embed Pods Frameworks */,
+				2984C9AD680E6D12303AB74B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +184,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2984C9AD680E6D12303AB74B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		55C72A5EE6621997E7E411B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
