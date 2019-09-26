@@ -59,6 +59,90 @@ class itemClass {
             mUITextView.text = ""
         case 21:
             mUITextView.text = ""
+        case 22:
+            mUITextView.text = ""
+        case 23:
+            mUITextView.text = ""
+        case 24:
+            mUITextView.text = ""
+        case 25:
+            mUITextView.text = ""
+        case 26:
+            mUITextView.text = ""
+        case 27:
+            mUITextView.text = ""
+        case 28:
+            mUITextView.text = ""
+        case 29:
+            mUITextView.text = ""
+        case 30:
+            mUITextView.text = ""
+        case 31:
+            mUITextView.text = ""
+        case 32:
+            mUITextView.text = ""
+        case 33:
+            mUITextView.text = ""
+        case 34:
+            mUITextView.text = ""
+        case 35:
+            mUITextView.text = ""
+        case 36:
+            mUITextView.text = ""
+        case 37:
+            mUITextView.text = ""
+        case 38:
+            mUITextView.text = ""
+        case 39:
+            mUITextView.text = ""
+        case 40:
+            mUITextView.text = ""
+        case 41:
+            mUITextView.text = ""
+        case 42:
+            mUITextView.text = ""
+        case 43:
+            mUITextView.text = ""
+        case 44:
+            mUITextView.text = ""
+        case 45:
+            mUITextView.text = ""
+        case 46:
+            mUITextView.text = ""
+        case 47:
+            mUITextView.text = ""
+        case 48:
+            mUITextView.text = ""
+        case 49:
+            mUITextView.text = ""
+        case 50:
+            mUITextView.text = ""
+        case 51:
+            mUITextView.text = ""
+        case 52:
+            mUITextView.text = ""
+        case 53:
+            mUITextView.text = ""
+        case 54:
+            mUITextView.text = ""
+        case 55:
+            mUITextView.text = ""
+        case 56:
+            mUITextView.text = ""
+        case 57:
+            mUITextView.text = ""
+        case 58:
+            mUITextView.text = ""
+        case 59:
+            mUITextView.text = ""
+        case 60:
+            mUITextView.text = ""
+        case 61:
+            mUITextView.text = ""
+        case 62:
+            mUITextView.text = ""
+        case 63:
+            mUITextView.text = ""
         default:
             mUITextView.text = ""
             
