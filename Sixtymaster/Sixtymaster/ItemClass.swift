@@ -22,7 +22,49 @@ class itemClass {
     }
     
     static func setUITextView(mUITextView : UITextView,item :Int){
- 
-    
-}
+        switch item {
+        case 4:
+            mUITextView.text = ""
+        case 5:
+            mUITextView.text = ""
+        case 6:
+            mUITextView.text = ""
+        case 7:
+            mUITextView.text = ""
+        case 8:
+            mUITextView.text = ""
+        case 9:
+            mUITextView.text = ""
+        case 10:
+            mUITextView.text = ""
+        case 11:
+            mUITextView.text = ""
+        case 12:
+            mUITextView.text = ""
+        case 13:
+            mUITextView.text = ""
+        case 14:
+            mUITextView.text = ""
+        case 15:
+            mUITextView.text = ""
+        case 16:
+            mUITextView.text = ""
+        case 17:
+            mUITextView.text = ""
+        case 18:
+            mUITextView.text = ""
+        case 19:
+            mUITextView.text = ""
+        case 20:
+            mUITextView.text = ""
+        case 21:
+            mUITextView.text = ""
+        default:
+            mUITextView.text = ""
+            
+            
+        }
+        
+        
+    }
 }
