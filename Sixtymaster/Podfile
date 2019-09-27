@@ -10,6 +10,7 @@ target 'Sixtymaster' do
 pod 'Firebase/Core'
 pod 'Firebase/AdMob'
 pod 'Firebase'
-pod 'FirebaseUI'
+pod 'GoogleSignIn'
+pod 'Firebase/Auth'
 
 end

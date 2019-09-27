@@ -92,7 +92,7 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
     func setRightButton(s: String){
         // 導覽列右邊按鈕
              let rightButton = UIBarButtonItem(
-               title:"設定",
+               title:s,
                style:.plain,
                target:self,
                action:#selector(ViewController.setting))
