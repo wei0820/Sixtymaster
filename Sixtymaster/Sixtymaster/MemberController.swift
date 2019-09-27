@@ -34,7 +34,14 @@ class MemberController: UIViewController ,GIDSignInDelegate   {
         
     }
     
+    @IBOutlet weak var signOutButton: UIButton!
+    @IBAction func userLogOut(_ sender: Any) {
+        GIDSignIn.sharedInstance().signOut()
+           // [START_EXCLUDE silent]
+           toggleAuthUI()
+    }
     
+    @IBOutlet var logoutbtn: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         if #available(iOS 13.0, *) {
@@ -61,12 +68,16 @@ class MemberController: UIViewController ,GIDSignInDelegate   {
         if let _ = GIDSignIn.sharedInstance()?.currentUser?.authentication {
             // Signed in
             signInButton.isHidden = true
+            signOutButton.isHidden = false
+
             print(GIDSignIn.sharedInstance()?.currentUser?.userID)
             print(GIDSignIn.sharedInstance()?.currentUser?.profile.email)
             print(GIDSignIn.sharedInstance()?.currentUser?.profile.imageURL(withDimension: 400))
             
         } else {
             signInButton.isHidden = false
+            signOutButton.isHidden = true
+
         }
     }
     

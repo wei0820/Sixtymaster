@@ -307,12 +307,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkb-9W-VtY">
+                                <rect key="frame" x="87" y="591" width="240" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登出"/>
+                                <connections>
+                                    <action selector="userLogOut:" destination="g7K-Qq-lrf" eventType="touchUpInside" id="i2d-sO-MRn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mgo-eo-xjw"/>
                     </view>
                     <connections>
                         <outlet property="signInButton" destination="U8R-DV-TAd" id="VXA-hP-H9a"/>
+                        <outlet property="signOutButton" destination="wkb-9W-VtY" id="neE-SA-z8m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fa3-yY-Usb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
