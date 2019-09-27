@@ -10,17 +10,29 @@ import UIKit
 import Firebase
 import GoogleSignIn
 class MemberController: UIViewController ,GIDSignInDelegate   {
-
-
+    
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            // ...
+        if error != nil{
+            print(error)
             return
+        }else{
+            guard let authentication = user.authentication else { return }
+            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                           accessToken: authentication.accessToken)
+            Auth.auth().signIn(with: credential) { (authResult, error) in
+                if let error = error {
+                    // ...
+                    return
+                }
+                // User is signed in
+                // ...
+                
+            }
         }
         
-        guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                       accessToken: authentication.accessToken)    }
+        
+    }
     
     
     override func viewDidLoad() {
@@ -34,16 +46,29 @@ class MemberController: UIViewController ,GIDSignInDelegate   {
         }
         // Do any additional setup after loading the view.'
         // Google Sing in Login
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-
-        GIDSignIn.sharedInstance()?.presentingViewController = self
-        GIDSignIn.sharedInstance().delegate = self
         
-
-    
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        
+        // Automatically sign in the user.
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        toggleAuthUI()
+        
     }
-
-
+    
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    
+    func toggleAuthUI() {
+        if let _ = GIDSignIn.sharedInstance()?.currentUser?.authentication {
+            // Signed in
+            signInButton.isHidden = true
+            print(GIDSignIn.sharedInstance()?.currentUser?.userID)
+            print(GIDSignIn.sharedInstance()?.currentUser?.profile.email)
+            print(GIDSignIn.sharedInstance()?.currentUser?.profile.imageURL(withDimension: 400))
+            
+        } else {
+            signInButton.isHidden = false
+        }
+    }
     
     /*
      // MARK: - Navigation

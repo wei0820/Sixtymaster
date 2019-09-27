@@ -311,6 +311,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mgo-eo-xjw"/>
                     </view>
+                    <connections>
+                        <outlet property="signInButton" destination="U8R-DV-TAd" id="VXA-hP-H9a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fa3-yY-Usb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
