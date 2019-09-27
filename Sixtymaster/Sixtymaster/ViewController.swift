@@ -9,7 +9,8 @@
 import UIKit
  import GoogleMobileAds
 import CommonCrypto
-
+import Firebase
+import GoogleSignIn
 class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelegate ,UITableViewDataSource,UITableViewDelegate{
     @IBOutlet weak var sb: UISearchBar!
     @IBOutlet weak var tb: UITableView!
@@ -82,12 +83,21 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
             overrideUserInterfaceStyle = .light
 
         }
-        setRightButton(s: "登入")
-     
+        setRightButton(s: "會員中心")
+
         setAdBanner()
         
         
         
+    }
+    func checkLogin(){
+        if let _ = GIDSignIn.sharedInstance()?.currentUser?.authentication {
+               // Signed in
+
+        }else{
+            setRightButton(s: "登入")
+
+        }
     }
     func setRightButton(s: String){
         // 導覽列右邊按鈕

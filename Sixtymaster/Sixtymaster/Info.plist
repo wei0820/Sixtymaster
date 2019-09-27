@@ -31,8 +31,19 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>926018577760627</string>
+	<key>FacebookDisplayName</key>
+	<string>六十甲子籤詩</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-7019441527375550~8190058392</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

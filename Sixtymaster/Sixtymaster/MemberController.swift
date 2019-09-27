@@ -11,28 +11,18 @@ import Firebase
 import GoogleSignIn
 class MemberController: UIViewController ,GIDSignInDelegate   {
     
-    
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if error != nil{
-            print(error)
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!){
+        if let err = error {
+            print ("failed to log into Google", err)
             return
-        }else{
-            guard let authentication = user.authentication else { return }
-            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                           accessToken: authentication.accessToken)
-            Auth.auth().signIn(with: credential) { (authResult, error) in
-                if let error = error {
-                    // ...
-                    return
-                }
-                // User is signed in
-                // ...
-                
-            }
         }
-        
-        
-    }
+
+        print("successfully logged into Google",user)
+        self.toggleAuthUI()
+
+
+
+        }
     
     @IBOutlet weak var signOutButton: UIButton!
     @IBAction func userLogOut(_ sender: Any) {
@@ -41,7 +31,6 @@ class MemberController: UIViewController ,GIDSignInDelegate   {
            toggleAuthUI()
     }
     
-    @IBOutlet var logoutbtn: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         if #available(iOS 13.0, *) {
@@ -54,10 +43,15 @@ class MemberController: UIViewController ,GIDSignInDelegate   {
         // Do any additional setup after loading the view.'
         // Google Sing in Login
         
-        GIDSignIn.sharedInstance()?.presentingViewController = self
-        
+
         // Automatically sign in the user.
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        GIDSignIn.sharedInstance().delegate = self
+
+
+
         toggleAuthUI()
         
     }
@@ -77,6 +71,7 @@ class MemberController: UIViewController ,GIDSignInDelegate   {
         } else {
             signInButton.isHidden = false
             signOutButton.isHidden = true
+            
 
         }
     }
