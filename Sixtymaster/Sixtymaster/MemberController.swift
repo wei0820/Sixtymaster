@@ -19,7 +19,8 @@ class MemberController: UIViewController {
                overrideUserInterfaceStyle = .light
 
            }
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.'
+        
     }
     
 
