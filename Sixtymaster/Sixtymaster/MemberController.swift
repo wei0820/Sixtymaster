@@ -100,6 +100,16 @@ class MemberController: UIViewController ,GIDSignInDelegate   {
         }
     }
     
+    @IBOutlet weak var authenticateBtn: UIButton!
+    @IBAction func AuthenticateFun(_ sender: Any) {
+        Auth.auth().signInAnonymously { (user, error) in
+                if error != nil {
+                    print(error?.localizedDescription)
+                }else{
+                    print(user.debugDescription)
+            }}
+        
+    }
     /*
      // MARK: - Navigation
      

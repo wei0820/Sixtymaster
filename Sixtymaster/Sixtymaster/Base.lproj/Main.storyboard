@@ -333,11 +333,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7m5-Mu-L0G">
+                                <rect key="frame" x="87" y="433" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="訪客登入"/>
+                                <connections>
+                                    <action selector="AuthenticateFun:" destination="g7K-Qq-lrf" eventType="touchUpInside" id="exf-ab-G7q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mgo-eo-xjw"/>
                     </view>
                     <connections>
+                        <outlet property="authenticateBtn" destination="7m5-Mu-L0G" id="8Zb-Cu-lZ4"/>
                         <outlet property="mIdLabel" destination="0WW-95-vOc" id="XJD-gc-XOF"/>
                         <outlet property="mImg" destination="PtL-Bz-aYY" id="OD7-3P-hmL"/>
                         <outlet property="mMaliLabel" destination="5JE-6S-cZq" id="HUR-3j-TkH"/>

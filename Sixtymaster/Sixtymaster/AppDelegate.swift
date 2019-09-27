@@ -9,7 +9,10 @@ import UIKit
 import GoogleMobileAds
 import Firebase
 import GoogleSignIn
+import FBSDKLoginKit
+
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
@@ -32,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
              GIDSignIn.sharedInstance().delegate = self
+        
+        
         return true
     }
     
