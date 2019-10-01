@@ -10,6 +10,7 @@
 		8E293F9A233CBC56000FA4CB /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E293F99233CBC56000FA4CB /* MemberController.swift */; };
 		8E293F9C233DA533000FA4CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E293F9B233DA533000FA4CB /* GoogleService-Info.plist */; };
 		8E293F9E2342F3A8000FA4CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E293F9D2342F3A8000FA4CB /* LoginViewController.swift */; };
+		8E293F9F23432690000FA4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FDDC8C2209418900318481 /* Main.storyboard */; };
 		8E815265233A131A003C7CCD /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E815264233A131A003C7CCD /* ItemClass.swift */; };
 		8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8CCD2338B0BD001630F6 /* FourController.swift */; };
 		B71D7B6322096A4900D85E81 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D7B6222096A4900D85E81 /* OneController.swift */; };
@@ -18,7 +19,6 @@
 		B7A64D87232E3DE20021DFC8 /* ThreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A64D86232E3DE20021DFC8 /* ThreeController.swift */; };
 		B7FDDC892209418900318481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDDC882209418900318481 /* AppDelegate.swift */; };
 		B7FDDC8B2209418900318481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDDC8A2209418900318481 /* ViewController.swift */; };
-		B7FDDC8E2209418900318481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FDDC8C2209418900318481 /* Main.storyboard */; };
 		B7FDDC932209418A00318481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FDDC912209418A00318481 /* LaunchScreen.storyboard */; };
 		F90D0322141BCB52D32BAFD7 /* Pods_Sixtymaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891026AD8E3910C31B746CFE /* Pods_Sixtymaster.framework */; };
 /* End PBXBuildFile section */
@@ -173,10 +173,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E293F9F23432690000FA4CB /* Main.storyboard in Resources */,
 				B7FDDC932209418A00318481 /* LaunchScreen.storyboard in Resources */,
 				8E293F9C233DA533000FA4CB /* GoogleService-Info.plist in Resources */,
 				B71D7B652209AA1500D85E81 /* Assets.xcassets in Resources */,
-				B7FDDC8E2209418900318481 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +405,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9SDG9LYLGC;
 				INFOPLIST_FILE = Sixtymaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,6 +427,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9SDG9LYLGC;
 				INFOPLIST_FILE = Sixtymaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

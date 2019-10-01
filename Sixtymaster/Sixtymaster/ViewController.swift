@@ -90,15 +90,7 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         
         
     }
-    func checkLogin(){
-        if let _ = GIDSignIn.sharedInstance()?.currentUser?.authentication {
-               // Signed in
 
-        }else{
-            setRightButton(s: "登入")
-
-        }
-    }
     func setRightButton(s: String){
         // 導覽列右邊按鈕
              let rightButton = UIBarButtonItem(

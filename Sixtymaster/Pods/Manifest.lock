@@ -4,6 +4,16 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.2.0)
   - AppAuth/Core (1.2.0)
   - AppAuth/ExternalUserAgent (1.2.0)
+  - FacebookCore (0.9.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FacebookLogin (0.9.0):
+    - FacebookCore (~> 0.9.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKLoginKit (~> 5.0)
+  - FacebookShare (0.9.0):
+    - FacebookCore (~> 0.9.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKShareKit (~> 5.0)
   - FBSDKCoreKit (5.5.0):
     - FBSDKCoreKit/Basics (= 5.5.0)
     - FBSDKCoreKit/Core (= 5.5.0)
@@ -11,6 +21,8 @@ PODS:
   - FBSDKCoreKit/Core (5.5.0):
     - FBSDKCoreKit/Basics
   - FBSDKLoginKit (5.5.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.5.0):
     - FBSDKCoreKit (~> 5.0)
   - Firebase (6.7.0):
     - Firebase/Core (= 6.7.0)
@@ -107,7 +119,9 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
-  - FBSDKLoginKit
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
   - Firebase
   - Firebase/AdMob
   - Firebase/Analytics
@@ -118,8 +132,12 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AppAuth
+    - FacebookCore
+    - FacebookLogin
+    - FacebookShare
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - FBSDKShareKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -140,8 +158,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AppAuth: bce82c76043657c99d91e7882e8a9e1a93650cd4
+  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
+  FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
+  FacebookShare: 85968ad1b1606c4944fb154924e425fd29184ea5
   FBSDKCoreKit: 7ade9cfea30eef2f6cf105a1aa904f89ea68fb7d
   FBSDKLoginKit: bb28062f24e79590c44ba03297ca9bea4b6436d2
+  FBSDKShareKit: 6316a2dcd2fbc419c87281aa4c50ad0b6ed431e7
   Firebase: 291d7b0a7b393f252358083b5d224884126fa46d
   FirebaseAnalytics: 843c7f64a8f9c79f0d03281197ebe7bb1d58d477
   FirebaseAuth: e7f86c2dfc57281cd01f7da5e4b40e01e4510a4a
@@ -160,6 +182,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 2177542876dbf370e024d86e54fdd468f7ced7b7
+PODFILE CHECKSUM: 83a006e85431d9293fd9199dcd6adf756852931d
 
 COCOAPODS: 1.7.5

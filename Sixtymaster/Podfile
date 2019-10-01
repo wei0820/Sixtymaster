@@ -12,8 +12,9 @@ pod 'Firebase/AdMob'
 pod 'Firebase'
 pod 'GoogleSignIn'
 pod 'Firebase/Auth'
-
-    pod 'FBSDKLoginKit'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
     
 
 end
