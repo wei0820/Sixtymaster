@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rVG-gH-RNS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xoV-ss-KPb">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -358,6 +358,27 @@
             </objects>
             <point key="canvasLocation" x="-46.376811594202906" y="600"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="DLZ-gP-S91">
+            <objects>
+                <viewController id="xoV-ss-KPb" customClass="LoginViewController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sy0-k9-aix">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_1024" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-z5-Jjq">
+                                <rect key="frame" x="57" y="29" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HLX-0V-onW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8h-qr-cXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-19"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEr-O9-Vt9">
             <objects>
@@ -676,5 +697,6 @@
         <image name="2" width="400" height="870"/>
         <image name="3" width="400" height="870"/>
         <image name="4" width="400" height="870"/>
+        <image name="icon_1024" width="1024" height="1024"/>
     </resources>
 </document>

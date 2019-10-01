@@ -12,7 +12,6 @@
 		8E293F9E2342F3A8000FA4CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E293F9D2342F3A8000FA4CB /* LoginViewController.swift */; };
 		8E815265233A131A003C7CCD /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E815264233A131A003C7CCD /* ItemClass.swift */; };
 		8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8CCD2338B0BD001630F6 /* FourController.swift */; };
-		8ECC4EC3233B55EE00393BBB /* SignPoetry.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC4EC5233B55EE00393BBB /* SignPoetry.strings */; };
 		B71D7B6322096A4900D85E81 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D7B6222096A4900D85E81 /* OneController.swift */; };
 		B71D7B652209AA1500D85E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71D7B642209AA1500D85E81 /* Assets.xcassets */; };
 		B7A64D85232E27060021DFC8 /* TwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A64D84232E27060021DFC8 /* TwoController.swift */; };
@@ -32,7 +31,6 @@
 		8E293F9D2342F3A8000FA4CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8E815264233A131A003C7CCD /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 		8E8D8CCD2338B0BD001630F6 /* FourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourController.swift; sourceTree = "<group>"; };
-		8ECC4EC4233B55EE00393BBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SignPoetry.strings; sourceTree = "<group>"; };
 		B301E10E89C1FE0A49A72E8F /* Pods-Sixtymaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.debug.xcconfig"; path = "Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.debug.xcconfig"; sourceTree = "<group>"; };
 		B71D7B6222096A4900D85E81 /* OneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneController.swift; sourceTree = "<group>"; };
 		B71D7B642209AA1500D85E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				B7A64D86232E3DE20021DFC8 /* ThreeController.swift */,
 				8E8D8CCD2338B0BD001630F6 /* FourController.swift */,
 				8E815264233A131A003C7CCD /* ItemClass.swift */,
-				8ECC4EC5233B55EE00393BBB /* SignPoetry.strings */,
 				8E293F99233CBC56000FA4CB /* MemberController.swift */,
 			);
 			path = Sixtymaster;
@@ -176,7 +173,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ECC4EC3233B55EE00393BBB /* SignPoetry.strings in Resources */,
 				B7FDDC932209418A00318481 /* LaunchScreen.storyboard in Resources */,
 				8E293F9C233DA533000FA4CB /* GoogleService-Info.plist in Resources */,
 				B71D7B652209AA1500D85E81 /* Assets.xcassets in Resources */,
@@ -265,14 +261,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8ECC4EC5233B55EE00393BBB /* SignPoetry.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8ECC4EC4233B55EE00393BBB /* en */,
-			);
-			name = SignPoetry.strings;
-			sourceTree = "<group>";
-		};
 		B7FDDC8C2209418900318481 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
