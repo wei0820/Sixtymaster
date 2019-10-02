@@ -14,10 +14,12 @@ import FacebookCore
 
 class LoginViewController: UIViewController, LoginButtonDelegate {
     
+    @IBAction func GusetLogin(_ sender: Any) {
+    }
     
     @IBAction func fblogin(_ sender: Any) {
         let loginManager = LoginManager()
-          loginManager.logIn(permissions: [.publicProfile, .userFriends], viewController: self) { result in
+        loginManager.logIn(permissions: [.publicProfile, .userFriends,.email], viewController: self) { result in
             self.loginManagerDidComplete(result)
           }
     }
@@ -31,13 +33,13 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
             overrideUserInterfaceStyle = .light
             
         }
-        
-        
-        let button = FBLoginButton(permissions: [.publicProfile,.email,
-        ])
-        button.delegate = self
-        button.center = view.center
-        view.addSubview(button)
+//
+//
+//        let button = FBLoginButton(permissions: [.publicProfile,.email,
+//        ])
+//        button.delegate = self
+//        button.center = view.center
+//        view.addSubview(button)
         getLoginStatus()
     
         
