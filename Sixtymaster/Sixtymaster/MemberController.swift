@@ -49,15 +49,7 @@ class MemberController: UIViewController{
         
     }
     
-    @IBOutlet weak var signInButton: GIDSignInButton!
     
-    func toggleAuthUI() {
-        
-    }
-    
-    @IBOutlet weak var authenticateBtn: UIButton!
-    @IBAction func AuthenticateFun(_ sender: Any) {
-    }
     /*
      // MARK: - Navigation
      
