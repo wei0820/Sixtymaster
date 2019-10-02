@@ -12,7 +12,8 @@ import GoogleSignIn
 import FacebookCore
 import FacebookLogin
 class MemberController: UIViewController{
-    
+    let userDefaults = UserDefaults.standard
+
     @IBOutlet weak var mIdLabel: UILabel!
     @IBOutlet weak var mMaliLabel: UILabel!
     @IBOutlet weak var mImg: UIImageView!
@@ -20,6 +21,8 @@ class MemberController: UIViewController{
     @IBOutlet weak var signOutButton: UIButton!
     @IBAction func userLogOut(_ sender: Any) {
    let loginManager = LoginManager()
+        userDefaults.set(nil, forKey: "userID")
+
    loginManager.logOut()
 
                   // [START_EXCLUDE silent]    }

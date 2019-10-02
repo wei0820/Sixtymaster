@@ -13,6 +13,7 @@ import FacebookLogin
 import FacebookCore
 
 class LoginViewController: UIViewController, LoginButtonDelegate {
+    let userDefaults = UserDefaults.standard
     
     @IBAction func GusetLogin(_ sender: Any) {
         Auth.auth().signInAnonymously() { (authResult, error) in
@@ -24,9 +25,11 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
             guard let user = authResult?.user else { return }
             let isAnonymous = user.isAnonymous  // true
             let uid = user.uid
-            
-            print(uid)
-            
+            self.userDefaults.set(uid, forKey: "userID")
+            let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                      let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+                      let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                      appDelegate.window?.rootViewController = HomeVc
         }
         
     }
@@ -68,30 +71,39 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     }
     
     func getLoginStatus(){
-        
-        if let accessToken = AccessToken.current {
+        if((userDefaults.value(forKey: "userID")) != nil){
             let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-            let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-            appDelegate.window?.rootViewController = HomeVc
-            // User is logged in, use 'accessToken' here.
-            let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+                               let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+                               let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                               appDelegate.window?.rootViewController = HomeVc
             
-            Auth.auth().signIn(with: credential) { (authResult, error) in
-                if let error = error {
-                    // ...
-                    return
-                }
-                // User is signed in
-                print("==============")
-                
-                print(accessToken.tokenString)
-                
-                print( Auth.auth().currentUser?.displayName)
-                print( Auth.auth().currentUser?.photoURL)
-                print("==============")
-                
-            }
+        }else{
+            if let accessToken = AccessToken.current {
+                      let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                      let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+                      let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                      appDelegate.window?.rootViewController = HomeVc
+                      // User is logged in, use 'accessToken' here.
+                      let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+                      
+                      Auth.auth().signIn(with: credential) { (authResult, error) in
+                          if let error = error {
+                              // ...
+                              return
+                          }
+                          // User is signed in
+                          print("==============")
+                          
+                          print(accessToken.tokenString)
+                          
+                          print( Auth.auth().currentUser?.displayName)
+                          print( Auth.auth().currentUser?.photoURL)
+                          print("==============")
+                          
+                      }
+        }
+        
+      
             
             
             
