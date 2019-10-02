@@ -12,7 +12,7 @@ import GoogleSignIn
 import FacebookLogin
 import FacebookCore
 
-class LoginViewController: UIViewController, LoginButtonDelegate {
+class LoginViewController: UIViewController {
     let userDefaults = UserDefaults.standard
     
     @IBAction func GusetLogin(_ sender: Any) {
@@ -50,24 +50,8 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
             overrideUserInterfaceStyle = .light
             
         }
-        //
-        //
-        //        let button = FBLoginButton(permissions: [.publicProfile,.email,
-        //        ])
-        //        button.delegate = self
-        //        button.center = view.center
-        //        view.addSubview(button)
         getLoginStatus()
-        
-        
-        
-        //
-        //        // Automatically sign in the user.
-        //        GIDSignIn.sharedInstance()?.presentingViewController = self
-        //
-        //        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-        //        GIDSignIn.sharedInstance().delegate = self
-        // Do any additional setup after loading the view.
+ 
     }
     
     func getLoginStatus(){
@@ -121,22 +105,6 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
      // Pass the selected object to the new view controller.
      }
      */
-    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        print("Did complete login via LoginButton with result \(String(describing: result)) " +
-            "error\(String(describing: error))")
-        if let error = error {
-            print(error.localizedDescription)
-            return
-        }
-        getLoginStatus()
-        
-        
-        
-    }
-    
-    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
-        print("Did logout via LoginButton")
-    }
     func loginManagerDidComplete(_ result: LoginResult) {
         switch result {
         case .cancelled: break
