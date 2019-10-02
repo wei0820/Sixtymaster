@@ -15,13 +15,27 @@ import FacebookCore
 class LoginViewController: UIViewController, LoginButtonDelegate {
     
     @IBAction func GusetLogin(_ sender: Any) {
+        Auth.auth().signInAnonymously() { (authResult, error) in
+            if let error = error {
+                // ...
+                return
+            }
+            // ...
+            guard let user = authResult?.user else { return }
+            let isAnonymous = user.isAnonymous  // true
+            let uid = user.uid
+            
+            print(uid)
+            
+        }
+        
     }
     
     @IBAction func fblogin(_ sender: Any) {
         let loginManager = LoginManager()
         loginManager.logIn(permissions: [.publicProfile, .userFriends,.email], viewController: self) { result in
             self.loginManagerDidComplete(result)
-          }
+        }
     }
     
     override func viewDidLoad() {
@@ -33,15 +47,15 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
             overrideUserInterfaceStyle = .light
             
         }
-//
-//
-//        let button = FBLoginButton(permissions: [.publicProfile,.email,
-//        ])
-//        button.delegate = self
-//        button.center = view.center
-//        view.addSubview(button)
+        //
+        //
+        //        let button = FBLoginButton(permissions: [.publicProfile,.email,
+        //        ])
+        //        button.delegate = self
+        //        button.center = view.center
+        //        view.addSubview(button)
         getLoginStatus()
-    
+        
         
         
         //
@@ -56,33 +70,33 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     func getLoginStatus(){
         
         if let accessToken = AccessToken.current {
-                let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-                let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
-                let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-                appDelegate.window?.rootViewController = HomeVc
-                // User is logged in, use 'accessToken' here.
+            let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+            let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+            appDelegate.window?.rootViewController = HomeVc
+            // User is logged in, use 'accessToken' here.
             let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
-                  
-                  Auth.auth().signIn(with: credential) { (authResult, error) in
-                    if let error = error {
-                      // ...
-                      return
-                    }
-                    // User is signed in
-                    print("==============")
-
-                    print(accessToken.tokenString)
-
-                    print( Auth.auth().currentUser?.displayName)
-                    print( Auth.auth().currentUser?.photoURL)
-                    print("==============")
-
+            
+            Auth.auth().signIn(with: credential) { (authResult, error) in
+                if let error = error {
+                    // ...
+                    return
+                }
+                // User is signed in
+                print("==============")
+                
+                print(accessToken.tokenString)
+                
+                print( Auth.auth().currentUser?.displayName)
+                print( Auth.auth().currentUser?.photoURL)
+                print("==============")
+                
             }
             
-
-      
-
-
+            
+            
+            
+            
             
         }
     }
@@ -99,8 +113,8 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         print("Did complete login via LoginButton with result \(String(describing: result)) " +
             "error\(String(describing: error))")
         if let error = error {
-          print(error.localizedDescription)
-          return
+            print(error.localizedDescription)
+            return
         }
         getLoginStatus()
         
@@ -112,15 +126,15 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         print("Did logout via LoginButton")
     }
     func loginManagerDidComplete(_ result: LoginResult) {
-      switch result {
-      case .cancelled: break
-      case .failed(let error): break
-      case .success(let grantedPermissions, _, _):
-        getLoginStatus()
-        break
-        
-
-      }
+        switch result {
+        case .cancelled: break
+        case .failed(let error): break
+        case .success(let grantedPermissions, _, _):
+            getLoginStatus()
+            break
+            
+            
+        }
     }
     
     
