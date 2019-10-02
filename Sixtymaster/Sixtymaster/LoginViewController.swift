@@ -11,9 +11,16 @@ import Firebase
 import GoogleSignIn
 import FacebookLogin
 import FacebookCore
+
 class LoginViewController: UIViewController, LoginButtonDelegate {
     
     
+    @IBAction func fblogin(_ sender: Any) {
+        let loginManager = LoginManager()
+          loginManager.logIn(permissions: [.publicProfile, .userFriends], viewController: self) { result in
+            self.loginManagerDidComplete(result)
+          }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +33,8 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         }
         
         
-        let button = FBLoginButton(permissions: [.publicProfile,.email])
+        let button = FBLoginButton(permissions: [.publicProfile,.email,
+        ])
         button.delegate = self
         button.center = view.center
         view.addSubview(button)
@@ -51,18 +59,26 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate;
                 appDelegate.window?.rootViewController = HomeVc
                 // User is logged in, use 'accessToken' here.
-            }
+            let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+                  
+                  Auth.auth().signIn(with: credential) { (authResult, error) in
+                    if let error = error {
+                      // ...
+                      return
+                    }
+                    // User is signed in
+                    print("==============")
 
-        let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
-        
-        Auth.auth().signIn(with: credential) { (authResult, error) in
-          if let error = error {
-            // ...
-            return
-          }
-          // User is signed in
-            print(authResult?.user.email)
-          //
+                    print(accessToken.tokenString)
+
+                    print( Auth.auth().currentUser?.displayName)
+                    print( Auth.auth().currentUser?.photoURL)
+                    print("==============")
+
+            }
+            
+
+      
 
 
             
@@ -80,6 +96,11 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         print("Did complete login via LoginButton with result \(String(describing: result)) " +
             "error\(String(describing: error))")
+        if let error = error {
+          print(error.localizedDescription)
+          return
+        }
+        getLoginStatus()
         
         
         
@@ -87,7 +108,22 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         print("Did logout via LoginButton")
-    }}
+    }
+    func loginManagerDidComplete(_ result: LoginResult) {
+      switch result {
+      case .cancelled: break
+      case .failed(let error): break
+      case .success(let grantedPermissions, _, _):
+        getLoginStatus()
+        break
+        
+
+      }
+    }
+    
+    
+}
+
 
 
 
