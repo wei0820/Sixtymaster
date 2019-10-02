@@ -312,6 +312,7 @@
                                 <state key="normal" title="登出"/>
                                 <connections>
                                     <action selector="userLogOut:" destination="g7K-Qq-lrf" eventType="touchUpInside" id="i2d-sO-MRn"/>
+                                    <segue destination="xoV-ss-KPb" kind="show" identifier="login" id="A2f-cc-0S2"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PtL-Bz-aYY">
@@ -355,14 +356,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fa3-yY-Usb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46.376811594202906" y="600"/>
+            <point key="canvasLocation" x="-4732" y="-3908"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="DLZ-gP-S91">
             <objects>
-                <viewController id="xoV-ss-KPb" customClass="LoginViewController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xoV-ss-KPb" customClass="LoginViewController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sy0-k9-aix">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_1024" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-z5-Jjq">
@@ -389,6 +390,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HLX-0V-onW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vVh-yP-qKw"/>
                     <connections>
                         <segue destination="rVG-gH-RNS" kind="show" identifier="home" id="gYR-Qb-QdP"/>
                     </connections>

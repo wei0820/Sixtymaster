@@ -13,19 +13,24 @@ import FacebookCore
 import FacebookLogin
 class MemberController: UIViewController{
     let userDefaults = UserDefaults.standard
-
+    
     @IBOutlet weak var mIdLabel: UILabel!
     @IBOutlet weak var mMaliLabel: UILabel!
     @IBOutlet weak var mImg: UIImageView!
-
+    
     @IBOutlet weak var signOutButton: UIButton!
     @IBAction func userLogOut(_ sender: Any) {
-   let loginManager = LoginManager()
+        let loginManager = LoginManager()
         userDefaults.set(nil, forKey: "userID")
-
-   loginManager.logOut()
-
-                  // [START_EXCLUDE silent]    }
+        
+        loginManager.logOut()
+        
+        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+        let HomeVc = stroyboard.instantiateViewController(withIdentifier: "login")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+        appDelegate.window?.rootViewController = HomeVc
+        
+        // [START_EXCLUDE silent]    }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +52,7 @@ class MemberController: UIViewController{
     @IBOutlet weak var signInButton: GIDSignInButton!
     
     func toggleAuthUI() {
-      
+        
     }
     
     @IBOutlet weak var authenticateBtn: UIButton!
@@ -63,5 +68,5 @@ class MemberController: UIViewController{
      }
      */
     
-
+    
 }
