@@ -12,6 +12,8 @@ import CommonCrypto
 import Firebase
 import GoogleSignIn
 class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelegate ,UITableViewDataSource,UITableViewDelegate{
+    let userDefaults = UserDefaults.standard
+
     @IBOutlet weak var sb: UISearchBar!
     @IBOutlet weak var tb: UITableView!
     var name :String = ""
@@ -83,7 +85,13 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
             overrideUserInterfaceStyle = .light
 
         }
-        setRightButton(s: "會員中心")
+        if((userDefaults.value(forKey: "userID")) != nil){
+            setRightButton(s: "訪客")
+
+        }else{
+            setRightButton(s: "會員中心")
+
+        }
 
         setAdBanner()
         
@@ -93,24 +101,33 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
 
     func setRightButton(s: String){
         // 導覽列右邊按鈕
-             let rightButton = UIBarButtonItem(
-               title:s,
-               style:.plain,
-               target:self,
-               action:#selector(ViewController.setting))
-             // 加到導覽列中
-             self.navigationItem.rightBarButtonItem = rightButton
+              let rightButton = UIBarButtonItem(
+                                       title:s,
+                                       style:.plain,
+                                       target:self,
+                                       action:#selector(ViewController.setting))
+                                     // 加到導覽列中
+                                     self.navigationItem.rightBarButtonItem = rightButton
+ 
+    
+
+    
+        
+
+      
         
     }
     @objc func setting() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "member"){
-            present(controller, animated: true) {
-                print("2222")
-            
-                
-            }
+                     present(controller, animated: true) {
+                     
+                         
+                     }
 
-        }
+                 }
+        
+        
+    
     }
     
   
