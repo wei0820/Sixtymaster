@@ -13,7 +13,7 @@ import FacebookCore
 import FacebookLogin
 class MemberController: UIViewController{
     let userDefaults = UserDefaults.standard
-    
+
     @IBOutlet weak var mIdLabel: UILabel!
     @IBOutlet weak var mMaliLabel: UILabel!
     @IBOutlet weak var mImg: UIImageView!
@@ -43,6 +43,22 @@ class MemberController: UIViewController{
         }
         // Do any additional setup after loading the view.'
         // Google Sing in Login
+    let user = Auth.auth().currentUser
+    if let user = user {
+      // The user's ID, unique to the Firebase project.
+      // Do NOT use this value to authenticate with your backend server,
+      // if you have one. Use getTokenWithCompletion:completion: instead.
+      let uid = user.uid
+      let email = user.email
+      let photoURL = user.photoURL
+       
+      // ...
+        print(uid)
+        print( user.displayName)
+        print(photoURL)
+
+    }
+
         print(Auth.auth().currentUser?.metadata.lastSignInDate)
         print(Auth.auth().currentUser?.metadata.creationDate)
        
