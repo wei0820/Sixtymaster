@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import FacebookLogin
+import FacebookCore
 class LoginViewController: UIViewController, LoginButtonDelegate {
     
     
@@ -25,19 +26,12 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         }
         
         
-        let button = FBLoginButton(permissions: [.publicProfile])
+        let button = FBLoginButton(permissions: [.publicProfile,.email])
         button.delegate = self
         button.center = view.center
         view.addSubview(button)
-        if let accessToken = AccessToken.current {
-            
-            let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-            let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-            appDelegate.window?.rootViewController = HomeVc
-            // User is logged in, use 'accessToken' here.
-        }
-        
+        getLoginStatus()
+    
         
         
         //
@@ -49,7 +43,31 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         // Do any additional setup after loading the view.
     }
     
-    
+    func getLoginStatus(){
+        
+        if let accessToken = AccessToken.current {
+                let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                appDelegate.window?.rootViewController = HomeVc
+                // User is logged in, use 'accessToken' here.
+            }
+
+        let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+        
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+          if let error = error {
+            // ...
+            return
+          }
+          // User is signed in
+            print(authResult?.user.email)
+          //
+
+
+            
+        }
+    }
     /*
      // MARK: - Navigation
      
@@ -70,4 +88,6 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         print("Did logout via LoginButton")
     }}
+
+
 
