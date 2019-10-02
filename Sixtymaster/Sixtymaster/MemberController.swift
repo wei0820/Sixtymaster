@@ -43,8 +43,12 @@ class MemberController: UIViewController{
         }
         // Do any additional setup after loading the view.'
         // Google Sing in Login
-        
-        
+        print(Auth.auth().currentUser?.metadata.lastSignInDate)
+        print(Auth.auth().currentUser?.metadata.creationDate)
+       
+       
+
+
         // Automatically sign in the user
         
     }
