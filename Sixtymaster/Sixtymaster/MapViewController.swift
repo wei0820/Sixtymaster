@@ -8,23 +8,31 @@
 
 import UIKit
 import Mapbox
+
 class MapViewController: UIViewController, MGLMapViewDelegate {
 
+    @IBOutlet weak var mapview: MGLMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let mapView = MGLMapView(frame: view.bounds)
-        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        mapView.setCenter(CLLocationCoordinate2D(latitude: mapView.latitude, longitude:mapView.longitude), zoomLevel: 9, animated: false)
-        view.addSubview(mapView)
-        mapView.styleURL = MGLStyle.streetsStyleURL
+
+//        let mapView = MGLMapView(frame: view.bounds)
+        mapview.setCenter(CLLocationCoordinate2DMake(mapview.latitude, mapview.longitude), animated: false)
+        mapview.zoomLevel = 13
+//        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        mapview.setCenter(CLLocationCoordinate2D(latitude: mapView.latitude, longitude:mapView.longitude), zoomLevel: 9, animated: false)
+        view.addSubview(mapview)
+        mapview.styleURL = MGLStyle.streetsStyleURL
+    
  
          
         // Set the map view's delegate
-        mapView.delegate = self
+        mapview.delegate = self
          
         // Allow the map view to display the user's location
-        mapView.showsUserLocation = true
+        mapview.showsUserLocation = true
         // Do any additional setup after loading the view.
+        
+   
     }
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
         mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)
@@ -58,5 +66,6 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
         // Into the local language where a given feature is located
         style.localizeLabels(into: Locale(identifier: "mul"))
     }
+  
 
 }

@@ -94,9 +94,10 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         }
 
         setAdBanner()
-        test()
-        test2()
-        
+        setLiftButton()
+//        test()
+//        test2()
+//
         
         
     }
@@ -119,6 +120,24 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
       
         
     }
+    func setLiftButton(){
+           // 導覽列右邊按鈕
+                 let liftButton = UIBarButtonItem(
+                                          title:"首頁",
+                                          style:.done,
+                                          target:self,
+                                          action:#selector(ViewController.homePage))
+                                        // 加到導覽列中
+        self.navigationItem.leftBarButtonItem = liftButton
+    
+       
+
+       
+           
+
+         
+           
+       }
     @objc func setting() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "member"){
                      present(controller, animated: true) {
@@ -131,7 +150,15 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         
     
     }
+    @objc func homePage() {
+             let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                       let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+                       let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                       appDelegate.window?.rootViewController = HomeVc
+        
+        
     
+    }
   
     func setAdBanner(){
         let id = "ca-app-pub-7019441527375550/6790180968"

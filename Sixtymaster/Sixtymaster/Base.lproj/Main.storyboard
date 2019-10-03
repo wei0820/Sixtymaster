@@ -384,9 +384,6 @@
                         <viewLayoutGuide key="safeArea" id="HLX-0V-onW"/>
                     </view>
                     <navigationItem key="navigationItem" id="vVh-yP-qKw"/>
-                    <connections>
-                        <segue destination="Mog-6V-mxF" kind="show" identifier="home" id="lP6-5o-3My"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8h-qr-cXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -396,27 +393,36 @@
         <scene sceneID="HQT-AK-a2g">
             <objects>
                 <viewController storyboardIdentifier="map" id="ZP5-cL-roe" customClass="MapViewController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="W6w-AS-Vgh" customClass="MGLMapView">
+                    <view key="view" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="W6w-AS-Vgh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRV-NU-ALn" customClass="MGLMapView">
+                                <rect key="frame" x="0.0" y="20" width="414" height="715"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LZf-LK-Xi4"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/light-v9"/>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <navigationItem key="navigationItem" id="RpD-iv-8Nm"/>
+                    <connections>
+                        <outlet property="mapview" destination="nRV-NU-ALn" id="rWm-R1-Ing"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fK8-ma-kN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3335" y="-4157"/>
+            <point key="canvasLocation" x="-357.97101449275362" y="-4842.391304347826"/>
         </scene>
         <!--Select Controller-->
         <scene sceneID="U4k-z4-pui">
             <objects>
                 <viewController storyboardIdentifier="home" id="Mog-6V-mxF" customClass="SelectController" customModule="台灣好廟網" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFW-6o-b8H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irX-8b-LEY">
@@ -466,14 +472,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKs-ug-e2i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2368.1159420289855" y="-4001.0869565217395"/>
+            <point key="canvasLocation" x="-1460.8695652173915" y="-4001.0869565217395"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEr-O9-Vt9">
             <objects>
                 <navigationController storyboardIdentifier="list" automaticallyAdjustsScrollViewInsets="NO" id="rVG-gH-RNS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="fPa-qY-eHx"/>
+                    <navigationItem key="navigationItem" id="fPa-qY-eHx">
+                        <barButtonItem key="backBarButtonItem" title="show" id="Ua6-44-BGq"/>
+                    </navigationItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5xT-gg-Iei">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

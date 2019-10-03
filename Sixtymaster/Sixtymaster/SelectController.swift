@@ -14,7 +14,8 @@ var adBannerView: GADBannerView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.isNavigationBarHidden = true
+
         if #available(iOS 13.0, *) {
                   overrideUserInterfaceStyle = .light
               } else {
@@ -27,6 +28,7 @@ var adBannerView: GADBannerView?
     }
     
     @IBAction func btn_1(_ sender: Any) {
+        
         let stroyboard = UIStoryboard(name: "Main", bundle: nil);
                            let HomeVc = stroyboard.instantiateViewController(withIdentifier: "map")
                            let appDelegate = UIApplication.shared.delegate as! AppDelegate;
