@@ -41,10 +41,7 @@ class LoginViewController: UIViewController {
         }
     }
     @IBAction func out(_ sender: Any) {
-        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-                           let HomeVc = stroyboard.instantiateViewController(withIdentifier: "map")
-                           let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-                           appDelegate.window?.rootViewController = HomeVc
+
 
     }
     

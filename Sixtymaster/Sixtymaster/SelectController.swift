@@ -26,7 +26,19 @@ var adBannerView: GADBannerView?
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btn_1(_ sender: Any) {
+        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                           let HomeVc = stroyboard.instantiateViewController(withIdentifier: "map")
+                           let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                           appDelegate.window?.rootViewController = HomeVc
+    }
+    @IBAction func btn_2(_ sender: Any) {
+        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                           let HomeVc = stroyboard.instantiateViewController(withIdentifier: "list")
+                           let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                           appDelegate.window?.rootViewController = HomeVc
+    }
+    
     /*
     // MARK: - Navigation
 
