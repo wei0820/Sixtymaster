@@ -22,6 +22,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         //        mapview.setCenter(CLLocationCoordinate2D(latitude: mapView.latitude, longitude:mapView.longitude), zoomLevel: 9, animated: false)
         view.addSubview(mapview)
         mapview.styleURL = MGLStyle.streetsStyleURL
+
         
         
         
@@ -65,6 +66,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         style.localizeLabels(into: Locale(identifier: "zh-Tw"))
         // Into the local language where a given feature is located
         style.localizeLabels(into: Locale(identifier: "mul"))
+  
     }
     @IBOutlet weak var tabBar: UITabBar!
     
