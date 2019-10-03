@@ -371,6 +371,14 @@
                                     <action selector="GusetLogin:" destination="xoV-ss-KPb" eventType="touchUpInside" id="ooq-5c-CWh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqR-Zd-lpM">
+                                <rect key="frame" x="280" y="337" width="77" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="out:" destination="xoV-ss-KPb" eventType="touchUpInside" id="ygw-II-vdx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HLX-0V-onW"/>
@@ -384,23 +392,24 @@
             </objects>
             <point key="canvasLocation" x="-3900.0000000000005" y="-3463.04347826087"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="HQT-AK-a2g">
             <objects>
-                <viewController id="ZP5-cL-roe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W6w-AS-Vgh" customClass="MGLMapView">
+                <viewController storyboardIdentifier="map" id="ZP5-cL-roe" customClass="MapViewController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="W6w-AS-Vgh" customClass="MGLMapView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LZf-LK-Xi4"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v11"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/light-v9"/>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" id="RpD-iv-8Nm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fK8-ma-kN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2917" y="-3925"/>
+            <point key="canvasLocation" x="-3335" y="-4157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEr-O9-Vt9">

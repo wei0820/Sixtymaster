@@ -65,5 +65,13 @@
 	</array>
 	<key>MGLMapboxAccessToken</key>
 	<string>pk.eyJ1IjoiamFja3BhbiIsImEiOiJjazFhMHpzZWsweHkwM2hvMWI2c3Y1aXplIn0.5qKlfQ6BnTR0pxY-3qsMtw</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+      <string>Description</string>
+
+      <key>NSLocationAlwaysUsageDescription</key>
+      <string>Will you allow this app to always know your location?</string>
+
+      <key>NSLocationWhenInUseUsageDescription</key>
+      <string>Do you allow this app to know your current location?</string>  
 </dict>
 </plist>

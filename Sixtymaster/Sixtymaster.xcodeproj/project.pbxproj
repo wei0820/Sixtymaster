@@ -11,6 +11,7 @@
 		8E293F9E2342F3A8000FA4CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E293F9D2342F3A8000FA4CB /* LoginViewController.swift */; };
 		8E293F9F23432690000FA4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FDDC8C2209418900318481 /* Main.storyboard */; };
 		8E293FA323447AD2000FA4CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E293FA223447AD2000FA4CB /* GoogleService-Info.plist */; };
+		8E293FA723458DF5000FA4CB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E293FA623458DF5000FA4CB /* MapViewController.swift */; };
 		8E815265233A131A003C7CCD /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E815264233A131A003C7CCD /* ItemClass.swift */; };
 		8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8CCD2338B0BD001630F6 /* FourController.swift */; };
 		B71D7B6322096A4900D85E81 /* OneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D7B6222096A4900D85E81 /* OneController.swift */; };
@@ -29,6 +30,7 @@
 		8E293F99233CBC56000FA4CB /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
 		8E293F9D2342F3A8000FA4CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8E293FA223447AD2000FA4CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E293FA623458DF5000FA4CB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8E815264233A131A003C7CCD /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 		8E8D8CCD2338B0BD001630F6 /* FourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourController.swift; sourceTree = "<group>"; };
 		B301E10E89C1FE0A49A72E8F /* Pods-Sixtymaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixtymaster.debug.xcconfig"; path = "Target Support Files/Pods-Sixtymaster/Pods-Sixtymaster.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				8E8D8CCD2338B0BD001630F6 /* FourController.swift */,
 				8E815264233A131A003C7CCD /* ItemClass.swift */,
 				8E293F99233CBC56000FA4CB /* MemberController.swift */,
+				8E293FA623458DF5000FA4CB /* MapViewController.swift */,
 			);
 			path = Sixtymaster;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				8E293F9E2342F3A8000FA4CB /* LoginViewController.swift in Sources */,
 				8E815265233A131A003C7CCD /* ItemClass.swift in Sources */,
 				B7A64D85232E27060021DFC8 /* TwoController.swift in Sources */,
+				8E293FA723458DF5000FA4CB /* MapViewController.swift in Sources */,
 				B7FDDC8B2209418900318481 /* ViewController.swift in Sources */,
 				B71D7B6322096A4900D85E81 /* OneController.swift in Sources */,
 				8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */,
