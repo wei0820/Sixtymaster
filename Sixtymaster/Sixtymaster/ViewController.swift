@@ -11,9 +11,9 @@ import UIKit
 import CommonCrypto
 import Firebase
 import GoogleSignIn
+import FirebaseDatabase
 class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelegate ,UITableViewDataSource,UITableViewDelegate{
     let userDefaults = UserDefaults.standard
-
     @IBOutlet weak var sb: UISearchBar!
     @IBOutlet weak var tb: UITableView!
     var name :String = ""
@@ -94,6 +94,8 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         }
 
         setAdBanner()
+        test()
+        test2()
         
         
         
@@ -232,5 +234,52 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
     }
     
 
+    func test(){
 
+        let reference: DatabaseReference! = Database.database().reference().child("movieReviews").child("userId-00001")
+        
+        // 新增節點資料
+        var movieReview: [String : AnyObject] = [String : AnyObject]()
+        movieReview["movieId"] = "0000001" as AnyObject
+        movieReview["movieName"] = "玩命關頭8" as AnyObject
+        movieReview["movieReview"] = "緊張刺激，不可不看！" as AnyObject
+        movieReview["createDate"] = "111122reg" as AnyObject
+        
+        let childRef = "11111" // 隨機生成的節點唯一識別碼，用來當儲存時的key值
+        let movieReviewReference = reference.child(childRef)
+        
+        movieReviewReference.updateChildValues(movieReview) { (err, ref) in
+            if err != nil{
+                print("err： \(err!)")
+                return
+            }
+            
+            print(ref.description())
+        }
+    }
+    
+    func test2(){
+        // 查詢節點資料
+        Database.database().reference().child("movieReviews").child("userId-00001").observe(.childAdded, with: {
+            (snapshot) in
+            // childAdded逐筆呈現
+            if let dictionaryData = snapshot.value as? [String: AnyObject]{
+                print(dictionaryData)
+                print(snapshot.key)
+            }
+            
+        }, withCancel: nil)
+    }
+    
+    func test3(){
+        // 刪除節點資料
+        Database.database().reference().child("movieReviews").child("userId-00001").removeValue { (error, ref) in
+               if error != nil{
+                   print(error!)
+                   return
+               }
+               
+               print("remove data success...")
+           }
+    }
 }
