@@ -398,10 +398,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRV-NU-ALn" customClass="MGLMapView">
-                                <rect key="frame" x="0.0" y="20" width="414" height="715"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zyi-Gg-o1g">
+                                <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem tag="1" systemItem="favorites" id="daA-bF-omh"/>
+                                    <tabBarItem systemItem="more" id="EdD-Tq-mjj"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="ZP5-cL-roe" id="IdU-xv-mD8"/>
+                                </connections>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LZf-LK-Xi4"/>
@@ -410,7 +422,9 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="homeItem" destination="daA-bF-omh" id="Uwg-5a-9h1"/>
                         <outlet property="mapview" destination="nRV-NU-ALn" id="rWm-R1-Ing"/>
+                        <outlet property="tabBar" destination="zyi-Gg-o1g" id="7nm-fd-jYM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fK8-ma-kN8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
