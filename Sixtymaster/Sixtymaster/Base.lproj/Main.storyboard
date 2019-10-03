@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="t86-aR-qf6" customClass="FourController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u7L-sC-mi3" customClass="Four">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fb-UQ-wd9">
@@ -128,11 +128,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZGi-ti-On3">
-                                <rect key="frame" x="0.0" y="151" width="414" height="527"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="547"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -181,7 +181,7 @@
             <objects>
                 <viewController id="BbW-MZ-hyW" customClass="ThreeController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dWv-yK-13m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9be-fK-umn">
@@ -351,7 +351,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_1024" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-z5-Jjq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iocn" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-z5-Jjq">
                                 <rect key="frame" x="57" y="29" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -385,7 +385,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vVh-yP-qKw"/>
                     <connections>
-                        <segue destination="rVG-gH-RNS" kind="show" identifier="home" id="gYR-Qb-QdP"/>
+                        <segue destination="Mog-6V-mxF" kind="show" identifier="home" id="lP6-5o-3My"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8h-qr-cXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -411,14 +411,46 @@
             </objects>
             <point key="canvasLocation" x="-3335" y="-4157"/>
         </scene>
+        <!--Select Controller-->
+        <scene sceneID="U4k-z4-pui">
+            <objects>
+                <viewController storyboardIdentifier="home" id="Mog-6V-mxF" customClass="SelectController" customModule="台灣好廟網" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pFW-6o-b8H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Si-pOB">
+                                <rect key="frame" x="184" y="390" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iocn" translatesAutoresizingMaskIntoConstraints="NO" id="kZe-cg-DxU">
+                                <rect key="frame" x="55" y="48" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irX-8b-LEY">
+                                <rect key="frame" x="184" y="474" width="46" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Odq-RO-egI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GBE-4q-Zpz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKs-ug-e2i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2368.1159420289855" y="-4001.0869565217395"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEr-O9-Vt9">
             <objects>
-                <navigationController storyboardIdentifier="home" automaticallyAdjustsScrollViewInsets="NO" id="rVG-gH-RNS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rVG-gH-RNS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="fPa-qY-eHx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5xT-gg-Iei">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -435,7 +467,7 @@
             <objects>
                 <viewController id="7Dh-hH-8Hr" customClass="OneController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iik-bI-dt6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-ml-eea">
@@ -612,7 +644,7 @@
             <objects>
                 <viewController id="s0L-P6-f50" customClass="TwoController" customModule="Sixtymaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zvn-sR-boj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2B4-Sd-mZv">
@@ -730,8 +762,8 @@
         <image name="2" width="400" height="870"/>
         <image name="3" width="400" height="870"/>
         <image name="4" width="400" height="870"/>
-        <image name="icon_1024" width="1024" height="1024"/>
         <image name="icons8-facebook-old-100" width="100" height="100"/>
         <image name="icons8-user-100" width="100" height="100"/>
+        <image name="iocn" width="1024" height="1024"/>
     </resources>
 </document>

@@ -41,6 +41,18 @@
       "scale" : "3x"
     },
     {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "Icon.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "Icon@2x.png",
+      "scale" : "2x"
+    },
+    {
       "size" : "60x60",
       "idiom" : "iphone",
       "filename" : "Icon-60@2x.png",
@@ -98,9 +110,8 @@
       "scale" : "2x"
     },
     {
-      "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "icon_1024.png",
+      "size" : "1024x1024",
       "scale" : "1x"
     },
     {
@@ -115,10 +126,34 @@
       "scale" : "1x"
     },
     {
+      "size" : "50x50",
+      "idiom" : "universal",
+      "filename" : "Icon-Small-50.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "50x50",
+      "idiom" : "universal",
+      "filename" : "Icon-Small-50@2x.png",
+      "scale" : "2x"
+    },
+    {
       "size" : "60x60",
       "idiom" : "universal",
       "filename" : "Icon-60.png",
       "scale" : "1x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "universal",
+      "filename" : "Icon-72.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "universal",
+      "filename" : "Icon-72@2x.png",
+      "scale" : "2x"
     },
     {
       "size" : "76x76",

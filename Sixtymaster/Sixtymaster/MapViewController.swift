@@ -36,9 +36,10 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
     }
 
     func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
-    let camera = MGLMapCamera(lookingAtCenter: annotation.coordinate, fromDistance: 4500, pitch: 15, heading: 180)
-    mapView.fly(to: camera, withDuration: 4,
-    peakAltitude: 3000, completionHandler: nil)
+    let camera = MGLMapCamera(lookingAtCenter: mapView.centerCoordinate, altitude: 4500, pitch: 15, heading: 180)
+     
+    // Animate the camera movement over 5 seconds.
+    mapView.setCamera(camera, withDuration: 5, animationTimingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
     }
 
     /*
