@@ -32,7 +32,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         // Allow the map view to display the user's location
         mapview.showsUserLocation = true
         // Do any additional setup after loading the view.
-//        addMarker(latitude: 25.054632, longitude: 121.533446, title: "1", subtitle: "2")
+        addMarker(latitude: 25.054632, longitude: 121.533446, title: "1", subtitle: "2")
 //        addMarker(latitude: 25.065788, longitude: 121.567842, title: "3", subtitle: "4")
         
         
@@ -40,12 +40,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
         mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)
     }
-    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
-        // Always allow callouts to popup when annotations are tapped.
-        
-        return true
-    }
-    
+  
     func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
         let camera = MGLMapCamera(lookingAtCenter: mapView.centerCoordinate, altitude: 4500, pitch: 15, heading: 180)
         
@@ -89,11 +84,25 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
     }
     //latitude: 25.054632, longitude: 121.533446
     func addMarker(latitude:Double,longitude:Double,title:String,subtitle  :String){
-        let hello = MGLPointAnnotation()
+        let  hello = MGLPointAnnotation()
         hello.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         hello.title = title
         hello.subtitle = subtitle
+        
+    
         // Add marker `hello` to the map.
         mapview.addAnnotation(hello)
     }
+    func mapView(_ mapView: MGLMapView, tapOnCalloutFor annotation: MGLAnnotation) {
+        print(annotation.title)
+   
+
+    }
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+          // Always allow callouts to popup when annotations are tapped.
+    
+          
+          return true
+      }
+      
 }

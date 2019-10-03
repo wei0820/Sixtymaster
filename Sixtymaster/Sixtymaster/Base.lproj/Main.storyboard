@@ -407,8 +407,8 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem tag="1" systemItem="favorites" id="daA-bF-omh"/>
-                                    <tabBarItem systemItem="more" id="EdD-Tq-mjj"/>
+                                    <tabBarItem tag="1" title="首頁" image="baseline_home_black_18dp-1" id="daA-bF-omh"/>
+                                    <tabBarItem title="新增" image="baseline_note_add_black_18dp" id="EdD-Tq-mjj"/>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="ZP5-cL-roe" id="IdU-xv-mD8"/>
@@ -809,6 +809,8 @@
         <image name="2" width="400" height="870"/>
         <image name="3" width="400" height="870"/>
         <image name="4" width="400" height="870"/>
+        <image name="baseline_home_black_18dp-1" width="36" height="36"/>
+        <image name="baseline_note_add_black_18dp" width="36" height="36"/>
         <image name="icons8-facebook-old-100" width="100" height="100"/>
         <image name="icons8-user-100" width="100" height="100"/>
         <image name="iocn" width="1024" height="1024"/>

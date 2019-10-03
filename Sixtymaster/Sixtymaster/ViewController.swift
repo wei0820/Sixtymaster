@@ -96,7 +96,7 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         setAdBanner()
         setLiftButton()
 //        test()
-//        test2()
+        test2()
 //
         
         
