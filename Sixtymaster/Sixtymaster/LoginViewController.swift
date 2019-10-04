@@ -19,11 +19,11 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
             
             isShow()
             show = false
-
+            
         }else{
-           isNoShow()
+            isNoShow()
             show = true
-
+            
         }
         
     }
@@ -32,6 +32,8 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
     @IBAction func GusetLogin(_ sender: Any) {
         Auth.auth().signInAnonymously() { (authResult, error) in
             if let error = error {
+                self.getError(S: error.localizedDescription)
+
                 // ...
                 return
             }
@@ -41,9 +43,9 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
             let uid = user.uid
             self.userDefaults.set(uid, forKey: "userID")
             let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-                      let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
-                      let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-                      appDelegate.window?.rootViewController = HomeVc
+            let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+            appDelegate.window?.rootViewController = HomeVc
         }
         
     }
@@ -54,7 +56,7 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
             self.loginManagerDidComplete(result)
         }
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,48 +68,74 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
             
         }
         getLoginStatus()
-//        phoneLogin()
         setTextField()
         isNoShow()
- 
+        
     }
     
     @IBAction func codelogin(_ sender: Any) {
+        let verificationID :String = UserDefaults.standard.string(forKey: "authVerificationID")!
+        let verificationCode = msmsCode.text!
+        
+        let credential = PhoneAuthProvider.provider().credential(
+            withVerificationID: verificationID,
+            verificationCode: verificationCode)
+        
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+            if let error = error {
+                self.getError(S: error.localizedDescription)
+
+                // ...
+                return
+            }
+            // User is signed in
+            guard let user = authResult?.user else { return }
+            let uid = user.uid
+            self.userDefaults.set(uid, forKey: "userID")
+            let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+            let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+            appDelegate.window?.rootViewController = HomeVc
+            // ...
+        }
+        
     }
     func getLoginStatus(){
         if((userDefaults.value(forKey: "userID")) != nil){
             let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-                               let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
-                               let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-                               appDelegate.window?.rootViewController = HomeVc
+            let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+            appDelegate.window?.rootViewController = HomeVc
             
         }else{
             if let accessToken = AccessToken.current {
-                      let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-                      let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
-                      let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-                      appDelegate.window?.rootViewController = HomeVc
-                      // User is logged in, use 'accessToken' here.
-                      let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
-                      
-                      Auth.auth().signIn(with: credential) { (authResult, error) in
-                          if let error = error {
-                              // ...
-                              return
-                          }
-                          // User is signed in
-                          print("==============")
-                          
-                          print(accessToken.tokenString)
-                          
-                          print( Auth.auth().currentUser?.displayName)
-                          print( Auth.auth().currentUser?.photoURL)
-                          print("==============")
-                          
-                      }
-        }
-        
-      
+                let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                appDelegate.window?.rootViewController = HomeVc
+                // User is logged in, use 'accessToken' here.
+                let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+                
+                Auth.auth().signIn(with: credential) { (authResult, error) in
+                    if let error = error {
+                        self.getError(S: error.localizedDescription)
+
+                        // ...
+                        return
+                    }
+                    // User is signed in
+                    print("==============")
+                    
+                    print(accessToken.tokenString)
+                    
+                    print( Auth.auth().currentUser?.displayName)
+                    print( Auth.auth().currentUser?.photoURL)
+                    print("==============")
+                    
+                }
+            }
+            
+            
             
             
             
@@ -136,7 +164,7 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
             
         }
     }   
-   
+    
     @IBOutlet weak var mphone: UITextField!
     @IBOutlet weak var msmsCode: UITextField!
     @IBAction func getcode(_ sender: Any) {
@@ -145,37 +173,7 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
             
         }
     }
-    func phoneLogin(){
-        let controller = UIAlertController(title: "登入", message: "請輸入你在 B12 星球的電話和密碼", preferredStyle: .alert)
-        controller.addTextField { (textField) in
-           textField.placeholder = "電話"
-           textField.keyboardType = UIKeyboardType.phonePad
-        }
-        controller.addTextField { (textField) in
-           textField.placeholder = "驗證碼"
-           textField.isSecureTextEntry = true
-        }
-        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-           let phone = controller.textFields?[0].text
-           let password = controller.textFields?[1].text
-            PhoneAuthProvider.provider().verifyPhoneNumber(phone!, uiDelegate: nil) { (verificationID, error) in
-                          if let error = error {
-                            return
-                          }
-                          // Sign in using the verificationID and the code sent to the user
-                          // ...
-                controller.textFields?[1].isHidden = true
 
-                        }
-                        Auth.auth().languageCode = "tw";
-           print(phone, password)
-        }
-        controller.addAction(okAction)
-        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
-        controller.addAction(cancelAction)
-        present(controller, animated: true, completion: nil)
-
-    }
     @IBOutlet weak var btn_1: UIButton!
     @IBOutlet weak var btn_2: UIButton!
     func setTextField(){
@@ -200,38 +198,47 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
         msmsCode.isHidden = true
         btn_1.isHidden = true
         btn_2.isHidden = true
-
+        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         // 結束編輯 把鍵盤隱藏起來
         self.view.endEditing(true)
-
+        
         return true
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-           self.view.endEditing(true)
-       }
+        self.view.endEditing(true)
+    }
     func getCode(phone :String){
         PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { (verificationID, error) in
-                          if let error = error {
-                            print("error")
+            if let error = error {
+                print("error")
+                self.getError(S: error.localizedDescription)
 
-                            print(error.localizedDescription)
-                        
-                            return
-                          }
-                          // Sign in using the verificationID and the code sent to the user
-            print("id")
-
-                 // ...
-
-                        }
-                        Auth.auth().languageCode = "tw";
-           print(phone)
+                print(error.localizedDescription)
+                
+                return
+            }
+            // Sign in using the verificationID and the code sent to the user
+            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+            
+            
+            // ...
+            
         }
+        Auth.auth().languageCode = "tw";
+        print(phone)
     }
     
+    func getError(S :String){
+        let controller = UIAlertController(title: "發生錯誤", message: S, preferredStyle: .alert)
+                   let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                   controller.addAction(okAction)
+                   present(controller, animated: true, completion: nil)
+    }
+}
+
 
 
 

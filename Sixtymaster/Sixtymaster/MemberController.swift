@@ -22,9 +22,7 @@ class MemberController: UIViewController{
     @IBAction func userLogOut(_ sender: Any) {
         let loginManager = LoginManager()
         userDefaults.set(nil, forKey: "userID")
-        
         loginManager.logOut()
-        
         let stroyboard = UIStoryboard(name: "Main", bundle: nil);
         let HomeVc = stroyboard.instantiateViewController(withIdentifier: "login")
         let appDelegate = UIApplication.shared.delegate as! AppDelegate;
