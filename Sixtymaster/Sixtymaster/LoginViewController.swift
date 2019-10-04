@@ -12,7 +12,7 @@ import GoogleSignIn
 import FacebookLogin
 import FacebookCore
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController , UITextFieldDelegate {
     @IBAction func phoneLogin(_ sender: Any) {
         phoneLogin()
     }
@@ -57,9 +57,12 @@ class LoginViewController: UIViewController {
         }
         getLoginStatus()
 //        phoneLogin()
+        setTextField()
  
     }
     
+    @IBAction func codelogin(_ sender: Any) {
+    }
     func getLoginStatus(){
         if((userDefaults.value(forKey: "userID")) != nil){
             let stroyboard = UIStoryboard(name: "Main", bundle: nil);
@@ -122,6 +125,15 @@ class LoginViewController: UIViewController {
             
         }
     }   
+   
+    @IBOutlet weak var mphone: UITextField!
+    @IBOutlet weak var msmsCode: UITextField!
+    @IBAction func getcode(_ sender: Any) {
+        if(mphone != nil && mphone.text?.count != 0 ){
+            getCode(phone: mphone.text!)
+            
+        }
+    }
     func phoneLogin(){
         let controller = UIAlertController(title: "登入", message: "請輸入你在 B12 星球的電話和密碼", preferredStyle: .alert)
         controller.addTextField { (textField) in
@@ -153,9 +165,51 @@ class LoginViewController: UIViewController {
         present(controller, animated: true, completion: nil)
 
     }
+    func setTextField(){
+        mphone.placeholder = "請輸入電話：+886912345678"
+        mphone.borderStyle = .roundedRect
+        mphone.returnKeyType = .done
+        mphone.delegate = self
+        mphone.clearButtonMode = .always  //一直显示清除按钮
+        msmsCode.placeholder = "請輸入驗證碼"
+        msmsCode.borderStyle = .roundedRect
+        msmsCode.clearButtonMode = .always  //一直显示清除按钮
+        msmsCode.textContentType = .oneTimeCode
+
+
+        
+
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // 結束編輯 把鍵盤隱藏起來
+        self.view.endEditing(true)
+
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           self.view.endEditing(true)
+       }
+    func getCode(phone :String){
+        PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { (verificationID, error) in
+                          if let error = error {
+                            print("error")
+
+                            print(error.localizedDescription)
+                        
+                            return
+                          }
+                          // Sign in using the verificationID and the code sent to the user
+            print("id")
+
+                 // ...
+
+                        }
+                        Auth.auth().languageCode = "tw";
+           print(phone)
+        }
+    }
     
-    
-}
+
 
 
 

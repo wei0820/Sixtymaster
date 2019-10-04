@@ -356,7 +356,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH1-FT-w8C">
-                                <rect key="frame" x="57" y="400" width="100" height="100"/>
+                                <rect key="frame" x="20" y="336" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="icons8-facebook-old-100"/>
                                 <connections>
@@ -364,7 +364,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-6z-8VT">
-                                <rect key="frame" x="172" y="400" width="100" height="100"/>
+                                <rect key="frame" x="157" y="334" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="icons8-user-100"/>
                                 <connections>
@@ -372,11 +372,39 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlM-vQ-JQm">
-                                <rect key="frame" x="279" y="402" width="100" height="100"/>
+                                <rect key="frame" x="294" y="334" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="baseline_phone_iphone_black_48pt_2x"/>
                                 <connections>
                                     <action selector="phoneLogin:" destination="xoV-ss-KPb" eventType="touchUpInside" id="McG-ZX-Bw9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKt-tr-f2j">
+                                <rect key="frame" x="60" y="460" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qc6-hp-QHU">
+                                <rect key="frame" x="57" y="541" width="243" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uir-kA-vJL">
+                                <rect key="frame" x="329" y="460" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="驗證"/>
+                                <connections>
+                                    <action selector="getcode:" destination="xoV-ss-KPb" eventType="touchUpInside" id="sQk-Y5-EyZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B1-1c-0RZ">
+                                <rect key="frame" x="326" y="543" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登入"/>
+                                <connections>
+                                    <action selector="codelogin:" destination="xoV-ss-KPb" eventType="touchUpInside" id="sW5-p2-wee"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -385,7 +413,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="vVh-yP-qKw"/>
                     <connections>
-                        <outlet property="phone" destination="mlM-vQ-JQm" id="LKu-05-5sh"/>
+                        <outlet property="mphone" destination="vKt-tr-f2j" id="5fF-tX-Em8"/>
+                        <outlet property="msmsCode" destination="qc6-hp-QHU" id="ebJ-Pg-QId"/>
                         <segue destination="Mog-6V-mxF" kind="show" identifier="home" id="K2n-xl-GxQ"/>
                     </connections>
                 </viewController>
