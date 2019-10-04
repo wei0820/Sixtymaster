@@ -371,12 +371,21 @@
                                     <action selector="GusetLogin:" destination="xoV-ss-KPb" eventType="touchUpInside" id="ooq-5c-CWh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlM-vQ-JQm">
+                                <rect key="frame" x="279" y="402" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="baseline_phone_iphone_black_48pt_2x"/>
+                                <connections>
+                                    <action selector="phoneLogin:" destination="xoV-ss-KPb" eventType="touchUpInside" id="McG-ZX-Bw9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HLX-0V-onW"/>
                     </view>
                     <navigationItem key="navigationItem" id="vVh-yP-qKw"/>
                     <connections>
+                        <outlet property="phone" destination="mlM-vQ-JQm" id="LKu-05-5sh"/>
                         <segue destination="Mog-6V-mxF" kind="show" identifier="home" id="K2n-xl-GxQ"/>
                     </connections>
                 </viewController>
@@ -816,6 +825,7 @@
         <image name="4" width="400" height="870"/>
         <image name="baseline_home_black_18dp-1" width="36" height="36"/>
         <image name="baseline_note_add_black_18dp" width="36" height="36"/>
+        <image name="baseline_phone_iphone_black_48pt_2x" width="96" height="96"/>
         <image name="icons8-facebook-old-100" width="100" height="100"/>
         <image name="icons8-user-100" width="100" height="100"/>
         <image name="iocn" width="1024" height="1024"/>

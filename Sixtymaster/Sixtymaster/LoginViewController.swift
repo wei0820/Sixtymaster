@@ -13,7 +13,11 @@ import FacebookLogin
 import FacebookCore
 
 class LoginViewController: UIViewController {
+    @IBAction func phoneLogin(_ sender: Any) {
+        phoneLogin()
+    }
     let userDefaults = UserDefaults.standard
+    @IBOutlet weak var phone: UIButton!
     
     @IBAction func GusetLogin(_ sender: Any) {
         Auth.auth().signInAnonymously() { (authResult, error) in
@@ -52,7 +56,7 @@ class LoginViewController: UIViewController {
             
         }
         getLoginStatus()
-        phoneLogin()
+//        phoneLogin()
  
     }
     
@@ -119,15 +123,34 @@ class LoginViewController: UIViewController {
         }
     }   
     func phoneLogin(){
-
-        PhoneAuthProvider.provider().verifyPhoneNumber("+886911325323", uiDelegate: nil) { (verificationID, error) in
-          if let error = error {
-            return
-          }
-          // Sign in using the verificationID and the code sent to the user
-          // ...
+        let controller = UIAlertController(title: "登入", message: "請輸入你在 B12 星球的電話和密碼", preferredStyle: .alert)
+        controller.addTextField { (textField) in
+           textField.placeholder = "電話"
+           textField.keyboardType = UIKeyboardType.phonePad
         }
-        Auth.auth().languageCode = "tw";
+        controller.addTextField { (textField) in
+           textField.placeholder = "驗證碼"
+           textField.isSecureTextEntry = true
+        }
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
+           let phone = controller.textFields?[0].text
+           let password = controller.textFields?[1].text
+            PhoneAuthProvider.provider().verifyPhoneNumber(phone!, uiDelegate: nil) { (verificationID, error) in
+                          if let error = error {
+                            return
+                          }
+                          // Sign in using the verificationID and the code sent to the user
+                          // ...
+                controller.textFields?[1].isHidden = true
+
+                        }
+                        Auth.auth().languageCode = "tw";
+           print(phone, password)
+        }
+        controller.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        controller.addAction(cancelAction)
+        present(controller, animated: true, completion: nil)
 
     }
     
