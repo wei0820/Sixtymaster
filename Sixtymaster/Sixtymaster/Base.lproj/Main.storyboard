@@ -408,6 +408,14 @@
                                             <outlet property="delegate" destination="ZP5-cL-roe" id="IdU-xv-mD8"/>
                                         </connections>
                                     </tabBar>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbW-j1-ChC">
+                                        <rect key="frame" x="8" y="616" width="115" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="mLoacrionBtn:" destination="ZP5-cL-roe" eventType="touchUpInside" id="E2n-JY-9Vy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>

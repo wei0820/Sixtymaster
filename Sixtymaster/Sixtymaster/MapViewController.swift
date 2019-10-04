@@ -18,7 +18,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         
         //        let mapView = MGLMapView(frame: view.bounds)
         mapview.setCenter(CLLocationCoordinate2DMake(mapview.latitude, mapview.longitude), animated: false)
-        mapview.zoomLevel = 13
+        mapview.zoomLevel = 15
         //        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         //        mapview.setCenter(CLLocationCoordinate2D(latitude: mapView.latitude, longitude:mapView.longitude), zoomLevel: 9, animated: false)
         view.addSubview(mapview)
@@ -37,6 +37,16 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
 //        addMarker(latitude: 25.065788, longitude: 121.567842, title: "3", subtitle: "4")
         
         
+    }
+    @IBAction func mLoacrionBtn(_ sender: Any) {
+      
+        mapview.setCenter((mapview.userLocation?.coordinate)!, animated: false)
+        var lat  : Double = mapview.userLocation?.coordinate.latitude ?? 0.0
+        var lon :Double =   mapview.userLocation?.coordinate.longitude ?? 0.0
+
+        mapview.setCenter(CLLocationCoordinate2DMake(lat, lon), animated: false)
+             mapview.zoomLevel = 15
+
     }
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
         mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)

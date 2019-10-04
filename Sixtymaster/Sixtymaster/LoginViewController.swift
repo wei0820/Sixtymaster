@@ -52,6 +52,7 @@ class LoginViewController: UIViewController {
             
         }
         getLoginStatus()
+        phoneLogin()
  
     }
     
@@ -116,6 +117,18 @@ class LoginViewController: UIViewController {
             
             
         }
+    }   
+    func phoneLogin(){
+
+        PhoneAuthProvider.provider().verifyPhoneNumber("+886911325323", uiDelegate: nil) { (verificationID, error) in
+          if let error = error {
+            return
+          }
+          // Sign in using the verificationID and the code sent to the user
+          // ...
+        }
+        Auth.auth().languageCode = "tw";
+
     }
     
     
