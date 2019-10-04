@@ -10,7 +10,8 @@ import UIKit
 import Mapbox
 
 class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
-    
+    let userDefaults = UserDefaults.standard
+
     @IBOutlet weak var mapview: MGLMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         // Allow the map view to display the user's location
         mapview.showsUserLocation = true
         // Do any additional setup after loading the view.
-        addMarker(latitude: 25.054632, longitude: 121.533446, title: "1", subtitle: "2")
+        addMarker(latitude: 25.054632, longitude: 121.533446, title: "長春路四面佛", subtitle: "很靈驗！")
 //        addMarker(latitude: 25.065788, longitude: 121.567842, title: "3", subtitle: "4")
         
         
@@ -78,6 +79,12 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
             appDelegate.window?.rootViewController = HomeVc
             break
         default:
+            if((userDefaults.value(forKey: "userID")) != nil){
+                let controller = UIAlertController(title: "訪客身份", message: "請先登入在使用！", preferredStyle: .alert)
+                  let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                  controller.addAction(okAction)
+                  present(controller, animated: true, completion: nil)
+            }
             break
             
         }

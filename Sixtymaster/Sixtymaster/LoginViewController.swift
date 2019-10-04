@@ -40,10 +40,7 @@ class LoginViewController: UIViewController {
             self.loginManagerDidComplete(result)
         }
     }
-    @IBAction func out(_ sender: Any) {
 
-
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
