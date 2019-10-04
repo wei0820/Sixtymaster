@@ -13,11 +13,21 @@ import FacebookLogin
 import FacebookCore
 
 class LoginViewController: UIViewController , UITextFieldDelegate {
+    var show = true
     @IBAction func phoneLogin(_ sender: Any) {
-        phoneLogin()
+        if show {
+            
+            isShow()
+            show = false
+
+        }else{
+           isNoShow()
+            show = true
+
+        }
+        
     }
     let userDefaults = UserDefaults.standard
-    @IBOutlet weak var phone: UIButton!
     
     @IBAction func GusetLogin(_ sender: Any) {
         Auth.auth().signInAnonymously() { (authResult, error) in
@@ -58,6 +68,7 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
         getLoginStatus()
 //        phoneLogin()
         setTextField()
+        isNoShow()
  
     }
     
@@ -165,6 +176,8 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
         present(controller, animated: true, completion: nil)
 
     }
+    @IBOutlet weak var btn_1: UIButton!
+    @IBOutlet weak var btn_2: UIButton!
     func setTextField(){
         mphone.placeholder = "請輸入電話：+886912345678"
         mphone.borderStyle = .roundedRect
@@ -175,11 +188,21 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
         msmsCode.borderStyle = .roundedRect
         msmsCode.clearButtonMode = .always  //一直显示清除按钮
         msmsCode.textContentType = .oneTimeCode
-
-
-        
+    }
+    func isShow(){
+        mphone.isHidden = false
+        msmsCode.isHidden = false
+        btn_1.isHidden = false
+        btn_2.isHidden = false
+    }
+    func isNoShow(){
+        mphone.isHidden = true
+        msmsCode.isHidden = true
+        btn_1.isHidden = true
+        btn_2.isHidden = true
 
     }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         // 結束編輯 把鍵盤隱藏起來
         self.view.endEditing(true)

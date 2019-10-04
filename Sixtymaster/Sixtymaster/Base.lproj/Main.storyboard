@@ -413,6 +413,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="vVh-yP-qKw"/>
                     <connections>
+                        <outlet property="btn_1" destination="Uir-kA-vJL" id="Jnf-fS-Llz"/>
+                        <outlet property="btn_2" destination="6B1-1c-0RZ" id="7iI-e9-c7T"/>
                         <outlet property="mphone" destination="vKt-tr-f2j" id="5fF-tX-Em8"/>
                         <outlet property="msmsCode" destination="qc6-hp-QHU" id="ebJ-Pg-QId"/>
                         <segue destination="Mog-6V-mxF" kind="show" identifier="home" id="K2n-xl-GxQ"/>
