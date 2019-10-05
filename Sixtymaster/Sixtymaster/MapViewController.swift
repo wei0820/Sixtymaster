@@ -8,7 +8,6 @@
 
 import UIKit
 import Mapbox
-
 class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
     let userDefaults = UserDefaults.standard
 
@@ -34,7 +33,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         mapview.showsUserLocation = true
         // Do any additional setup after loading the view.
         addMarker(latitude: 25.054632, longitude: 121.533446, title: "長春路四面佛", subtitle: "很靈驗！")
-//        addMarker(latitude: 25.065788, longitude: 121.567842, title: "3", subtitle: "4")
+
         
         
     }
