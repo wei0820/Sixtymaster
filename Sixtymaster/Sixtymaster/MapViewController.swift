@@ -16,7 +16,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         super.viewDidLoad()
         
         //        let mapView = MGLMapView(frame: view.bounds)
-        mapview.setCenter(CLLocationCoordinate2DMake(mapview.latitude, mapview.longitude), animated: false)
+        mapview.setCenter(CLLocationCoordinate2DMake(25.034815, 121.564392), animated: false)
         mapview.zoomLevel = 15
         //        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         //        mapview.setCenter(CLLocationCoordinate2D(latitude: mapView.latitude, longitude:mapView.longitude), zoomLevel: 9, animated: false)
@@ -71,9 +71,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         style.localizeLabels(into: nil)
         // Into Simplified Chinese
         style.localizeLabels(into: Locale(identifier: "zh-Tw"))
-        // Into the local language where a given feature is located
-        style.localizeLabels(into: Locale(identifier: "mul"))
-  
+        // Into the local language where a given feature is located  
     }
     @IBOutlet weak var tabBar: UITabBar!
     
