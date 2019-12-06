@@ -23,12 +23,8 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         view.addSubview(mapview)
         mapview.styleURL = MGLStyle.streetsStyleURL
 
-        
-        
-        
         // Set the map view's delegate
         mapview.delegate = self
-        
         // Allow the map view to display the user's location
         mapview.showsUserLocation = true
         // Do any additional setup after loading the view.
@@ -71,7 +67,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         style.localizeLabels(into: nil)
         // Into Simplified Chinese
         style.localizeLabels(into: Locale(identifier: "zh-Tw"))
-        // Into the local language where a given feature is located  
+        // Into the local language where a given feature is located
     }
     @IBOutlet weak var tabBar: UITabBar!
     
@@ -113,9 +109,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
 
     }
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
-          // Always allow callouts to popup when annotations are tapped.
-    
-          
+          // Always allow callouts to popup when annotations are tapped
           return true
       }
       
