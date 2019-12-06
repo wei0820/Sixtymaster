@@ -503,9 +503,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irX-8b-LEY">
-                                <rect key="frame" x="146" y="475" width="119" height="142"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irX-8b-LEY">
+                                <rect key="frame" x="128" y="328" width="119" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="acB-Yd-Zgm"/>
+                                    <constraint firstAttribute="width" constant="119" id="cX2-ww-C8Y"/>
+                                </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="解籤去">
@@ -520,13 +523,19 @@
                                     <action selector="btn_2:" destination="Mog-6V-mxF" eventType="touchUpInside" id="9ar-if-uEd"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iocn" translatesAutoresizingMaskIntoConstraints="NO" id="kZe-cg-DxU">
-                                <rect key="frame" x="55" y="48" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iocn" translatesAutoresizingMaskIntoConstraints="NO" id="kZe-cg-DxU">
+                                <rect key="frame" x="37" y="20" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="QoR-Es-Ddo"/>
+                                    <constraint firstAttribute="width" constant="300" id="U1a-p5-OB7"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Si-pOB">
-                                <rect key="frame" x="162" y="409" width="90" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Si-pOB">
+                                <rect key="frame" x="142" y="478" width="90" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Wej-P3-Swf"/>
+                                    <constraint firstAttribute="width" constant="90" id="szP-yW-V0T"/>
+                                </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="找廟去">
@@ -544,6 +553,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kZe-cg-DxU" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="37" id="3Yq-mq-tfy"/>
+                            <constraint firstItem="irX-8b-LEY" firstAttribute="top" secondItem="kZe-cg-DxU" secondAttribute="bottom" constant="8" id="8MG-ov-jlJ"/>
+                            <constraint firstItem="irX-8b-LEY" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="128" id="GUh-96-LWm"/>
+                            <constraint firstItem="kZe-cg-DxU" firstAttribute="top" secondItem="Odq-RO-egI" secondAttribute="top" constant="20" id="Q58-Ut-hmI"/>
+                            <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="irX-8b-LEY" secondAttribute="trailing" constant="128" id="iOY-ce-CBY"/>
+                            <constraint firstItem="GuY-Si-pOB" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="142" id="lFs-vT-rJP"/>
+                            <constraint firstItem="GuY-Si-pOB" firstAttribute="top" secondItem="irX-8b-LEY" secondAttribute="bottom" constant="8" id="v0Y-pa-2q4"/>
+                            <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="kZe-cg-DxU" secondAttribute="trailing" constant="38" id="wkD-WC-LET"/>
+                            <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="GuY-Si-pOB" secondAttribute="trailing" constant="143" id="xkt-ra-in6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Odq-RO-egI"/>
                     </view>
                     <navigationItem key="navigationItem" id="GBE-4q-Zpz"/>
