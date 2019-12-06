@@ -301,9 +301,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PtL-Bz-aYY">
-                                <rect key="frame" x="132" y="35" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PtL-Bz-aYY">
+                                <rect key="frame" x="112" y="20" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9vD-bi-Cjb"/>
+                                    <constraint firstAttribute="width" constant="150" id="c2t-fi-ZVj"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WW-95-vOc">
                                 <rect key="frame" x="76" y="227" width="262" height="21"/>
@@ -319,9 +322,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkb-9W-VtY">
-                                <rect key="frame" x="76" y="423" width="240" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkb-9W-VtY">
+                                <rect key="frame" x="67" y="583" width="240" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="PIK-4e-x4Y"/>
+                                    <constraint firstAttribute="height" constant="46" id="b8o-i7-Aru"/>
+                                </constraints>
                                 <state key="normal" title="登出"/>
                                 <connections>
                                     <action selector="userLogOut:" destination="g7K-Qq-lrf" eventType="touchUpInside" id="i2d-sO-MRn"/>
@@ -330,6 +336,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mgo-eo-xjw" firstAttribute="bottom" secondItem="wkb-9W-VtY" secondAttribute="bottom" constant="38" id="1xJ-De-8xE"/>
+                            <constraint firstItem="mgo-eo-xjw" firstAttribute="trailing" secondItem="wkb-9W-VtY" secondAttribute="trailing" constant="68" id="KYJ-V2-wFW"/>
+                            <constraint firstItem="mgo-eo-xjw" firstAttribute="trailing" secondItem="PtL-Bz-aYY" secondAttribute="trailing" constant="113" id="MXQ-vN-ZDn"/>
+                            <constraint firstItem="PtL-Bz-aYY" firstAttribute="leading" secondItem="mgo-eo-xjw" secondAttribute="leading" constant="112" id="WOL-bS-A5g"/>
+                            <constraint firstItem="wkb-9W-VtY" firstAttribute="leading" secondItem="mgo-eo-xjw" secondAttribute="leading" constant="67" id="avu-2m-APn"/>
+                            <constraint firstItem="PtL-Bz-aYY" firstAttribute="top" secondItem="mgo-eo-xjw" secondAttribute="top" constant="20" id="hWg-Zy-Ry9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mgo-eo-xjw"/>
                     </view>
                     <connections>
