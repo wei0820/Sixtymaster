@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xoV-ss-KPb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xoV-ss-KPb">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -432,14 +432,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRV-NU-ALn" customClass="MGLMapView">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRV-NU-ALn" customClass="MGLMapView">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zyi-Gg-o1g">
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyi-Gg-o1g">
                                         <rect key="frame" x="-8" y="0.0" width="422" height="49"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="DD9-Np-2Df"/>
+                                            <constraint firstAttribute="width" constant="422" id="WXF-fq-lPl"/>
+                                        </constraints>
                                         <items>
                                             <tabBarItem tag="1" title="首頁" image="baseline_home_black_18dp-1" id="daA-bF-omh"/>
                                             <tabBarItem title="新增" image="baseline_note_add_black_18dp" id="EdD-Tq-mjj"/>
@@ -448,16 +450,29 @@
                                             <outlet property="delegate" destination="ZP5-cL-roe" id="IdU-xv-mD8"/>
                                         </connections>
                                     </tabBar>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbW-j1-ChC">
-                                        <rect key="frame" x="8" y="616" width="115" height="66"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbW-j1-ChC">
+                                        <rect key="frame" x="8" y="647" width="44" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="3hJ-he-DNY"/>
+                                            <constraint firstAttribute="width" constant="44" id="DfH-RQ-lhS"/>
+                                            <constraint firstAttribute="height" constant="36" id="n6h-9u-PlC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="baseline_location_searching_black_18dp"/>
                                         <connections>
                                             <action selector="mLoacrionBtn:" destination="ZP5-cL-roe" eventType="touchUpInside" id="E2n-JY-9Vy"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KbW-j1-ChC" secondAttribute="bottom" constant="36" id="1Us-aw-05u"/>
+                                    <constraint firstItem="KbW-j1-ChC" firstAttribute="top" secondItem="zyi-Gg-o1g" secondAttribute="bottom" constant="598" id="8WF-Mc-JWJ"/>
+                                    <constraint firstItem="KbW-j1-ChC" firstAttribute="leading" secondItem="nRV-NU-ALn" secondAttribute="leadingMargin" id="Fqo-a6-CZ4"/>
+                                    <constraint firstItem="zyi-Gg-o1g" firstAttribute="leading" secondItem="nRV-NU-ALn" secondAttribute="leading" constant="-8" id="PKM-lF-dje"/>
+                                    <constraint firstItem="KbW-j1-ChC" firstAttribute="leading" secondItem="nRV-NU-ALn" secondAttribute="leading" constant="8" id="Sdp-6k-ixK"/>
+                                    <constraint firstAttribute="trailing" secondItem="zyi-Gg-o1g" secondAttribute="trailing" id="YAt-WT-bSc"/>
+                                    <constraint firstItem="zyi-Gg-o1g" firstAttribute="top" secondItem="nRV-NU-ALn" secondAttribute="top" id="jBH-Wo-IIj"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -855,6 +870,7 @@
         <image name="3" width="400" height="870"/>
         <image name="4" width="400" height="870"/>
         <image name="baseline_home_black_18dp-1" width="36" height="36"/>
+        <image name="baseline_location_searching_black_18dp" width="36" height="36"/>
         <image name="baseline_note_add_black_18dp" width="36" height="36"/>
         <image name="baseline_phone_iphone_black_48pt_2x" width="96" height="96"/>
         <image name="icons8-facebook-old-100" width="100" height="100"/>
