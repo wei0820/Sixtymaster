@@ -12,15 +12,17 @@ class SeekSignViewController: mViewController {
     @IBOutlet weak var img: UIImageView!
     var imgList = ["bad","laugh","saint"]
     var typeList = ["陰筊","笑筊","聖筊"]
+    @IBOutlet weak var typelabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-    
-        img.image = UIImage(named: imgList.randomElement()!)
-        print(imgList.randomElement()!)
+        var number = Int.random(in: 0...2)
+
+        img.image = UIImage(named: imgList[number])
+        typelabel.text = typeList[number]
     }
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         

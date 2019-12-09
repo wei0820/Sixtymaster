@@ -609,7 +609,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
-                                <rect key="frame" x="156" y="528" width="91" height="48"/>
+                                <rect key="frame" x="142" y="521" width="91" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="HgW-9q-moX"/>
                                     <constraint firstAttribute="width" constant="91" id="KYw-PI-rJX"/>
@@ -626,9 +626,9 @@
                             <constraint firstItem="kZe-cg-DxU" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="37" id="3Yq-mq-tfy"/>
                             <constraint firstItem="irX-8b-LEY" firstAttribute="top" secondItem="kZe-cg-DxU" secondAttribute="bottom" constant="-25" id="8MG-ov-jlJ"/>
                             <constraint firstItem="irX-8b-LEY" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="128" id="GUh-96-LWm"/>
-                            <constraint firstItem="JOW-gt-VmC" firstAttribute="top" secondItem="GuY-Si-pOB" secondAttribute="bottom" constant="36" id="OCz-nX-X2I"/>
+                            <constraint firstItem="JOW-gt-VmC" firstAttribute="top" secondItem="GuY-Si-pOB" secondAttribute="bottom" constant="29" id="OCz-nX-X2I"/>
                             <constraint firstItem="kZe-cg-DxU" firstAttribute="top" secondItem="Odq-RO-egI" secondAttribute="top" constant="20" id="Q58-Ut-hmI"/>
-                            <constraint firstItem="JOW-gt-VmC" firstAttribute="leading" secondItem="GuY-Si-pOB" secondAttribute="leading" constant="14" id="SCD-3B-LFE"/>
+                            <constraint firstItem="JOW-gt-VmC" firstAttribute="leading" secondItem="GuY-Si-pOB" secondAttribute="leading" id="SCD-3B-LFE"/>
                             <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="irX-8b-LEY" secondAttribute="trailing" constant="128" id="iOY-ce-CBY"/>
                             <constraint firstItem="GuY-Si-pOB" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="142" id="lFs-vT-rJP"/>
                             <constraint firstItem="GuY-Si-pOB" firstAttribute="top" secondItem="irX-8b-LEY" secondAttribute="bottom" constant="8" id="v0Y-pa-2q4"/>
@@ -658,6 +658,13 @@
                                     <constraint firstAttribute="width" constant="240" id="ya3-Hh-iWl"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-bP-XoB">
+                                <rect key="frame" x="166" y="314" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -669,6 +676,7 @@
                     <navigationItem key="navigationItem" id="Gmm-Pc-AFo"/>
                     <connections>
                         <outlet property="img" destination="act-1Q-bi7" id="b1M-bt-qYT"/>
+                        <outlet property="typelabel" destination="RaU-bP-XoB" id="jOv-kK-0F2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cba-6w-8Ka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
