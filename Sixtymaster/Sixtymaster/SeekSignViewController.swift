@@ -15,6 +15,16 @@ class SeekSignViewController: mViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        
+    }
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        
+    }
+    override func motionCancelled(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        
+    }
+ 
     
 
     /*
