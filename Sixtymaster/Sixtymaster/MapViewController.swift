@@ -55,8 +55,6 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
      }
      */
     func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-        style.localizeLabels(into: nil)
-        // Into Simplified Chinese
         style.localizeLabels(into: Locale(identifier: "zh-Tw"))
         // Into the local language where a given feature is located
     }
@@ -89,8 +87,6 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
         hello.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         hello.title = title
         hello.subtitle = subtitle
-        
-    
         // Add marker `hello` to the map.
         mapview.addAnnotation(hello)
     }

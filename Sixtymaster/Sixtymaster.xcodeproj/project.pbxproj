@@ -12,6 +12,8 @@
 		8E293F9F23432690000FA4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FDDC8C2209418900318481 /* Main.storyboard */; };
 		8E293FA723458DF5000FA4CB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E293FA623458DF5000FA4CB /* MapViewController.swift */; };
 		8E293FA92345BDB1000FA4CB /* SelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E293FA82345BDB1000FA4CB /* SelectController.swift */; };
+		8E2F23F0239DF86600BE4E7C /* SeekSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F23EF239DF86600BE4E7C /* SeekSignViewController.swift */; };
+		8E2F23F2239DF90800BE4E7C /* mViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F23F1239DF90800BE4E7C /* mViewController.swift */; };
 		8E815265233A131A003C7CCD /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E815264233A131A003C7CCD /* ItemClass.swift */; };
 		8E8D8CCE2338B0BD001630F6 /* FourController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8CCD2338B0BD001630F6 /* FourController.swift */; };
 		8EF00054234717D4002ED120 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EF00053234717D4002ED120 /* GoogleService-Info.plist */; };
@@ -33,6 +35,8 @@
 		8E293F9D2342F3A8000FA4CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8E293FA623458DF5000FA4CB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8E293FA82345BDB1000FA4CB /* SelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectController.swift; sourceTree = "<group>"; };
+		8E2F23EF239DF86600BE4E7C /* SeekSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekSignViewController.swift; sourceTree = "<group>"; };
+		8E2F23F1239DF90800BE4E7C /* mViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mViewController.swift; sourceTree = "<group>"; };
 		8E815264233A131A003C7CCD /* ItemClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
 		8E8D8CCD2338B0BD001630F6 /* FourController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourController.swift; sourceTree = "<group>"; };
 		8EF00053234717D4002ED120 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				8E293F99233CBC56000FA4CB /* MemberController.swift */,
 				8E293FA623458DF5000FA4CB /* MapViewController.swift */,
 				8E293FA82345BDB1000FA4CB /* SelectController.swift */,
+				8E2F23EF239DF86600BE4E7C /* SeekSignViewController.swift */,
+				8E2F23F1239DF90800BE4E7C /* mViewController.swift */,
 			);
 			path = Sixtymaster;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2F23F2239DF90800BE4E7C /* mViewController.swift in Sources */,
 				8E293F9E2342F3A8000FA4CB /* LoginViewController.swift in Sources */,
 				8E815265233A131A003C7CCD /* ItemClass.swift in Sources */,
 				B7A64D85232E27060021DFC8 /* TwoController.swift in Sources */,
@@ -269,6 +276,7 @@
 				B7FDDC892209418900318481 /* AppDelegate.swift in Sources */,
 				B7A64D87232E3DE20021DFC8 /* ThreeController.swift in Sources */,
 				8E293FA92345BDB1000FA4CB /* SelectController.swift in Sources */,
+				8E2F23F0239DF86600BE4E7C /* SeekSignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

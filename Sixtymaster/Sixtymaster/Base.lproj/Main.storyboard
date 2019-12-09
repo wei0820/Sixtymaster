@@ -561,7 +561,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irX-8b-LEY">
-                                <rect key="frame" x="128" y="328" width="119" height="142"/>
+                                <rect key="frame" x="128" y="295" width="119" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="acB-Yd-Zgm"/>
                                     <constraint firstAttribute="width" constant="119" id="cX2-ww-C8Y"/>
@@ -588,7 +588,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Si-pOB">
-                                <rect key="frame" x="142" y="478" width="90" height="47"/>
+                                <rect key="frame" x="142" y="445" width="90" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Wej-P3-Swf"/>
                                     <constraint firstAttribute="width" constant="90" id="szP-yW-V0T"/>
@@ -608,13 +608,27 @@
                                     <action selector="btn_1:" destination="Mog-6V-mxF" eventType="touchUpInside" id="rrA-1e-gGg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
+                                <rect key="frame" x="142" y="537" width="91" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="6rZ-6I-ot7"/>
+                                    <constraint firstAttribute="height" constant="48" id="sQX-Lx-tXn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="求籤去"/>
+                                <connections>
+                                    <action selector="btn_3:" destination="Mog-6V-mxF" eventType="touchUpInside" id="2fb-8G-3rY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="kZe-cg-DxU" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="37" id="3Yq-mq-tfy"/>
-                            <constraint firstItem="irX-8b-LEY" firstAttribute="top" secondItem="kZe-cg-DxU" secondAttribute="bottom" constant="8" id="8MG-ov-jlJ"/>
+                            <constraint firstItem="irX-8b-LEY" firstAttribute="top" secondItem="kZe-cg-DxU" secondAttribute="bottom" constant="-25" id="8MG-ov-jlJ"/>
+                            <constraint firstItem="JOW-gt-VmC" firstAttribute="top" secondItem="GuY-Si-pOB" secondAttribute="bottom" constant="45" id="CCg-FT-f1R"/>
                             <constraint firstItem="irX-8b-LEY" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="128" id="GUh-96-LWm"/>
                             <constraint firstItem="kZe-cg-DxU" firstAttribute="top" secondItem="Odq-RO-egI" secondAttribute="top" constant="20" id="Q58-Ut-hmI"/>
+                            <constraint firstItem="JOW-gt-VmC" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="142" id="QPd-6F-c7y"/>
                             <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="irX-8b-LEY" secondAttribute="trailing" constant="128" id="iOY-ce-CBY"/>
                             <constraint firstItem="GuY-Si-pOB" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="142" id="lFs-vT-rJP"/>
                             <constraint firstItem="GuY-Si-pOB" firstAttribute="top" secondItem="irX-8b-LEY" secondAttribute="bottom" constant="8" id="v0Y-pa-2q4"/>
@@ -627,7 +641,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKs-ug-e2i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1460.8695652173915" y="-4001.0869565217395"/>
+            <point key="canvasLocation" x="-1461.5999999999999" y="-4001.649175412294"/>
+        </scene>
+        <!--Seek Sign View Controller-->
+        <scene sceneID="n25-Qb-cT5">
+            <objects>
+                <viewController storyboardIdentifier="seeksign" id="XmE-ZO-zd7" customClass="SeekSignViewController" customModule="台灣好廟快搜" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWz-0H-5ek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Egz-g5-wgH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gmm-Pc-AFo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cba-6w-8Ka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681" y="-4010"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEr-O9-Vt9">
