@@ -14,20 +14,11 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
     @IBOutlet weak var mapview: MGLMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //        let mapView = MGLMapView(frame: view.bounds)
         mapview.setCenter(CLLocationCoordinate2DMake(25.034815, 121.564392), animated: false)
         mapview.zoomLevel = 15
-        //        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        //        mapview.setCenter(CLLocationCoordinate2D(latitude: mapView.latitude, longitude:mapView.longitude), zoomLevel: 9, animated: false)
-        view.addSubview(mapview)
         mapview.styleURL = MGLStyle.streetsStyleURL
-
-        // Set the map view's delegate
         mapview.delegate = self
-        // Allow the map view to display the user's location
         mapview.showsUserLocation = true
-        // Do any additional setup after loading the view.
         addMarker(latitude: 25.054632, longitude: 121.533446, title: "長春路四面佛", subtitle: "很靈驗！")
 
         
