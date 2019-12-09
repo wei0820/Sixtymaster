@@ -609,10 +609,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
-                                <rect key="frame" x="142" y="537" width="91" height="48"/>
+                                <rect key="frame" x="156" y="528" width="91" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="91" id="6rZ-6I-ot7"/>
-                                    <constraint firstAttribute="height" constant="48" id="sQX-Lx-tXn"/>
+                                    <constraint firstAttribute="height" constant="48" id="HgW-9q-moX"/>
+                                    <constraint firstAttribute="width" constant="91" id="KYw-PI-rJX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="求籤去"/>
@@ -625,10 +625,10 @@
                         <constraints>
                             <constraint firstItem="kZe-cg-DxU" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="37" id="3Yq-mq-tfy"/>
                             <constraint firstItem="irX-8b-LEY" firstAttribute="top" secondItem="kZe-cg-DxU" secondAttribute="bottom" constant="-25" id="8MG-ov-jlJ"/>
-                            <constraint firstItem="JOW-gt-VmC" firstAttribute="top" secondItem="GuY-Si-pOB" secondAttribute="bottom" constant="45" id="CCg-FT-f1R"/>
                             <constraint firstItem="irX-8b-LEY" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="128" id="GUh-96-LWm"/>
+                            <constraint firstItem="JOW-gt-VmC" firstAttribute="top" secondItem="GuY-Si-pOB" secondAttribute="bottom" constant="36" id="OCz-nX-X2I"/>
                             <constraint firstItem="kZe-cg-DxU" firstAttribute="top" secondItem="Odq-RO-egI" secondAttribute="top" constant="20" id="Q58-Ut-hmI"/>
-                            <constraint firstItem="JOW-gt-VmC" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="142" id="QPd-6F-c7y"/>
+                            <constraint firstItem="JOW-gt-VmC" firstAttribute="leading" secondItem="GuY-Si-pOB" secondAttribute="leading" constant="14" id="SCD-3B-LFE"/>
                             <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="irX-8b-LEY" secondAttribute="trailing" constant="128" id="iOY-ce-CBY"/>
                             <constraint firstItem="GuY-Si-pOB" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="142" id="lFs-vT-rJP"/>
                             <constraint firstItem="GuY-Si-pOB" firstAttribute="top" secondItem="irX-8b-LEY" secondAttribute="bottom" constant="8" id="v0Y-pa-2q4"/>
