@@ -1,53 +1,30 @@
 //
-//  SelectController.swift
+//  mViewController.swift
 //  Sixtymaster
 //
-//  Created by oneplay on 2019/10/3.
+//  Created by oneplay on 2019/12/9.
 //  Copyright © 2019 jackpan. All rights reserved.
 //
 
 import UIKit
 import GoogleMobileAds
-
-class SelectController: UIViewController,GADBannerViewDelegate {
-var adBannerView: GADBannerView?
+class mViewController: UIViewController ,GADBannerViewDelegate  {
+    var adBannerView: GADBannerView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = true
-
         if #available(iOS 13.0, *) {
-                  overrideUserInterfaceStyle = .light
-              } else {
-                  // Fallback on earlier versions
-                  overrideUserInterfaceStyle = .light
+                      overrideUserInterfaceStyle = .light
+                  } else {
+                      // Fallback on earlier versions
+                      overrideUserInterfaceStyle = .light
 
-              }
+                  }
         setAdBanner()
         // Do any additional setup after loading the view.
     }
-    @IBAction func btn_3(_ sender: Any) {
-        //seeksign
-        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-                               let HomeVc = stroyboard.instantiateViewController(withIdentifier: "seeksign")
-                               let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-                               appDelegate.window?.rootViewController = HomeVc
-    }
     
-    @IBAction func btn_1(_ sender: Any) {
-        
-        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-                           let HomeVc = stroyboard.instantiateViewController(withIdentifier: "map")
-                           let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-                           appDelegate.window?.rootViewController = HomeVc
-    }
-    @IBAction func btn_2(_ sender: Any) {
-        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
-                           let HomeVc = stroyboard.instantiateViewController(withIdentifier: "list")
-                           let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-                           appDelegate.window?.rootViewController = HomeVc
-    }
-    
+
     /*
     // MARK: - Navigation
 
