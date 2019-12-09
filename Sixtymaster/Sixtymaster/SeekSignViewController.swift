@@ -9,7 +9,8 @@
 import UIKit
 
 class SeekSignViewController: mViewController {
-
+    @IBOutlet weak var img: UIImageView!
+    var imgList = ["bad.jpg","laugh.jpg","saint.jpg"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +20,7 @@ class SeekSignViewController: mViewController {
         
     }
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        img = UIImageView(image: UIImage(named: imgList.randomElement()))
         
     }
     override func motionCancelled(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {

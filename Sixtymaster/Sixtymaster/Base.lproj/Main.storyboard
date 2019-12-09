@@ -650,14 +650,30 @@
                     <view key="view" contentMode="scaleToFill" id="pWz-0H-5ek">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="act-1Q-bi7">
+                                <rect key="frame" x="67" y="20" width="240" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="Kag-N1-SUp"/>
+                                    <constraint firstAttribute="width" constant="240" id="ya3-Hh-iWl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="act-1Q-bi7" firstAttribute="top" secondItem="Egz-g5-wgH" secondAttribute="top" constant="20" id="IJx-LE-xdt"/>
+                            <constraint firstItem="act-1Q-bi7" firstAttribute="leading" secondItem="Egz-g5-wgH" secondAttribute="leading" constant="67" id="jhJ-vb-91q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Egz-g5-wgH"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gmm-Pc-AFo"/>
+                    <connections>
+                        <outlet property="img" destination="act-1Q-bi7" id="b1M-bt-qYT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cba-6w-8Ka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-681" y="-4010"/>
+            <point key="canvasLocation" x="-682.39999999999998" y="-4010.6446776611697"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEr-O9-Vt9">
