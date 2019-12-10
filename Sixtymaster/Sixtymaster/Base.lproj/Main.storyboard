@@ -608,7 +608,7 @@
                                     <action selector="btn_1:" destination="Mog-6V-mxF" eventType="touchUpInside" id="rrA-1e-gGg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
                                 <rect key="frame" x="142" y="521" width="91" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="HgW-9q-moX"/>
@@ -722,6 +722,7 @@
                     <navigationItem key="navigationItem" id="Gmm-Pc-AFo"/>
                     <connections>
                         <outlet property="img" destination="act-1Q-bi7" id="b1M-bt-qYT"/>
+                        <outlet property="number" destination="xoh-MX-gIA" id="Sgj-sM-zJ1"/>
                         <outlet property="typelabel" destination="RaU-bP-XoB" id="jOv-kK-0F2"/>
                     </connections>
                 </viewController>

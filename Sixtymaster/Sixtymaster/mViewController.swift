@@ -10,6 +10,7 @@ import UIKit
 import GoogleMobileAds
 class mViewController: UIViewController ,GADBannerViewDelegate  {
     var adBannerView: GADBannerView?
+    var bglist = ["bg","bg2","bg3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class mViewController: UIViewController ,GADBannerViewDelegate  {
                   }
         setAdBanner()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: bglist.randomElement()!)!)
     }
     
 
