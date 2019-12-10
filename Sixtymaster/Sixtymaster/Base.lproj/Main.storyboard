@@ -95,11 +95,11 @@
 目前處於搖擺不定、心意難安的局面。其實財富或緣分是上天注定好的，該是你的就會是你的，一定要有決心，選擇好方向誠心誠意、專心一致地努力，最後會得到您想要結果。
 
 若問感情得此籤，表示雖然目前和對方有許多的問題與阻礙，即使有分手之虞，但是若能雙方相互配合，專情、努力不放棄這段感情，最後會有情人終成眷屬。若已分手問復合，需雙方能檢討分手原因，能相互配合則復合可成。</string>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="safeArea" id="ReZ-t8-ktj"/>
                                     </view>
                                 </subviews>
@@ -199,7 +199,6 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLy-bH-pBU">
                                                 <rect key="frame" x="87" y="685" width="240" height="2300"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">六十甲子籤
 
 第三籤【甲辰】
@@ -268,7 +267,6 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="safeArea" id="zHm-RR-a5C"/>
                                     </view>
                                 </subviews>
@@ -949,7 +947,6 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n54-pl-D3K">
                                                 <rect key="frame" x="80" y="408" width="240" height="2300"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">六十甲子籤
 
 第二籤【甲寅】
@@ -1023,7 +1020,6 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="safeArea" id="HYJ-44-cHJ"/>
                                     </view>
                                 </subviews>
