@@ -12,7 +12,7 @@ import CommonCrypto
 import Firebase
 import GoogleSignIn
 import FirebaseDatabase
-class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelegate ,UITableViewDataSource,UITableViewDelegate{
+class ViewController: mViewController ,UISearchBarDelegate ,UITableViewDataSource,UITableViewDelegate{
     let userDefaults = UserDefaults.standard
     @IBOutlet weak var sb: UISearchBar!
     @IBOutlet weak var tb: UITableView!
@@ -72,19 +72,11 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
                    "第三一籤　己丑","第三二籤　己卯","第三三籤　己巳","第三四籤　己未","第三五籤　己酉","第三六籤　己亥","第三七籤　庚子","第三八籤　庚寅","第三九籤　庚辰","第四十籤　庚午",
                    "第四一籤　庚申","第四二籤　庚戌","第四三籤　辛丑","第四四籤   辛卯","第四五籤　辛巳","第四六籤   辛未","第四七籤   辛酉","第四八籤   辛亥","第四九籤　壬子","第五十籤　壬寅",
                    "第五一籤　壬辰","第五二籤　壬午","第五三籤　壬申","第五四籤　壬戌","第五五籤　癸丑","第五六籤　癸卯","第五七籤　癸巳","第五八籤　癸未","第五九籤　癸酉","第六十籤　癸亥","頭籤","籤首","籤王"]
-    var adBannerView: GADBannerView?
     var isSearch : Bool = false
     var arrSearch = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if #available(iOS 13.0, *) {
-            overrideUserInterfaceStyle = .light
-        } else {
-            // Fallback on earlier versions
-            overrideUserInterfaceStyle = .light
-
-        }
         if((userDefaults.value(forKey: "userID")) != nil){
             setRightButton(s: "訪客")
 
@@ -93,7 +85,6 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
 
         }
 
-        setAdBanner()
         setLiftButton()
 //        test()
 //        test2()
@@ -159,71 +150,7 @@ class ViewController: UIViewController, GADBannerViewDelegate ,UISearchBarDelega
         
     
     }
-  
-    func setAdBanner(){
-        let id = "ca-app-pub-7019441527375550/6790180968"
-        adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        adBannerView!.adUnitID = id
-        adBannerView!.delegate = self
-        adBannerView!.rootViewController = self
-        
-        adBannerView!.load(GADRequest())
-    }
-    
-    // Called when an ad request loaded an ad.
-    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
-        addBannerViewToView(bannerView)
-        
-        print(bannerView.adUnitID)
-    }
-    
-    // Called when an ad request failed.
-    func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        print((error.localizedDescription))
-    }
-    
-    // Called just before presenting the user a full screen view, such as a browser, in response to
-    // clicking on an ad.
-    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
-        print(#function)
-    }
-    
-    // Called just before dismissing a full screen view.
-    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
-        print(#function)
-    }
-    
-    // Called just after dismissing a full screen view.
-    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
-        print(#function)
-    }
-    
-    // Called just before the application will background or terminate because the user clicked on an
-    // ad that will launch another application (such as the App Store).
-    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
-        print(#function)
-    }
-    func addBannerViewToView(_ bannerView: GADBannerView) {
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bannerView)
-        view.addConstraints(
-            [NSLayoutConstraint(item: bannerView,
-                                attribute: .bottom,
-                                relatedBy: .equal,
-                                toItem: bottomLayoutGuide,
-                                attribute: .top,
-                                multiplier: 1,
-                                constant: 0),
-             NSLayoutConstraint(item: bannerView,
-                                attribute: .centerX,
-                                relatedBy: .equal,
-                                toItem: view,
-                                attribute: .centerX,
-                                multiplier: 1,
-                                constant: 0)
-            ])
-    }
-    
+
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         isSearch = false
         sb.text = ""
