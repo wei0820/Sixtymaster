@@ -9,6 +9,7 @@
 import UIKit
 
 class SeekSignViewController: mViewController {
+    @IBOutlet weak var changeimg: UIImageView!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var img: UIImageView!
     var imgList = ["bad","laugh","saint"]
@@ -19,8 +20,15 @@ class SeekSignViewController: mViewController {
         view_1.isHidden = false
         view2.isHidden = true
 
+        DispatchQueue.main.asyncAfter(deadline:DispatchTime.now()+3){
+            self.img.image = UIImage(named: "paoshandadilots")
+            self.mlabel.text = "開始求籤"
+            
+        }
+
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var mlabel: UILabel!
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view_1: UIView!
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
