@@ -33,13 +33,29 @@ class SeekSignViewController: mViewController {
     @IBOutlet weak var mlabel: UILabel!
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view_1: UIView!
+    var checkInt = 0
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
 
         if(ischeck){
             var numberInt = Int.random(in: 0...2)
 
                     self.mimga.image = UIImage(named: imgList[numberInt])
-                        self.typelabel.text = typeList[numberInt]
+                    self.typelabel.text = typeList[numberInt]
+            if(numberInt == 2){
+                checkInt+=1
+                if(checkInt >= 3){
+                    
+                }else{
+                    checkInt = 0
+                    self.typelabel.text = typeList[numberInt]+"請重新求籤"
+
+                }
+                
+            }else{
+                checkInt = 0
+                self.typelabel.text = typeList[numberInt]+"請重新求籤"
+
+            }
         }else{
                     self.img.isHidden = true
                     self.mlabel.text = ""

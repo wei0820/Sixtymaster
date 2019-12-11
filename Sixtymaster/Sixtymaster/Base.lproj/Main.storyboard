@@ -663,11 +663,11 @@
                                             <constraint firstAttribute="width" constant="241" id="vre-n2-HYL"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-bP-XoB">
-                                        <rect key="frame" x="129" y="294" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-bP-XoB">
+                                        <rect key="frame" x="0.0" y="294" width="300" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="4cy-Sj-pJ6"/>
-                                            <constraint firstAttribute="width" constant="42" id="Ef9-Pq-7hZ"/>
+                                            <constraint firstAttribute="height" constant="21" id="f0M-HD-SPA"/>
+                                            <constraint firstAttribute="width" constant="300" id="om6-qI-kMv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -687,12 +687,12 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="act-1Q-bi7" firstAttribute="top" secondItem="Glq-i6-UTo" secondAttribute="top" constant="20" id="ALG-Uf-UNc"/>
-                                    <constraint firstItem="RaU-bP-XoB" firstAttribute="leading" secondItem="Glq-i6-UTo" secondAttribute="leading" constant="129" id="Lkp-gQ-UE3"/>
+                                    <constraint firstItem="RaU-bP-XoB" firstAttribute="top" secondItem="act-1Q-bi7" secondAttribute="bottom" constant="51" id="FxJ-2C-LGl"/>
                                     <constraint firstItem="5xf-Al-xoE" firstAttribute="leading" secondItem="HZh-o1-oqu" secondAttribute="leading" constant="-10" id="MD2-mb-ilf"/>
                                     <constraint firstItem="5xf-Al-xoE" firstAttribute="top" secondItem="Glq-i6-UTo" secondAttribute="top" constant="59" id="RQD-Eg-V3g"/>
                                     <constraint firstItem="act-1Q-bi7" firstAttribute="top" secondItem="Glq-i6-UTo" secondAttribute="top" constant="20" id="fa4-Av-Ar4"/>
                                     <constraint firstItem="act-1Q-bi7" firstAttribute="centerX" secondItem="HZh-o1-oqu" secondAttribute="centerX" id="gtI-Wd-Rui"/>
-                                    <constraint firstItem="RaU-bP-XoB" firstAttribute="top" secondItem="act-1Q-bi7" secondAttribute="bottom" constant="51" id="lxO-ii-H6m"/>
+                                    <constraint firstItem="RaU-bP-XoB" firstAttribute="centerX" secondItem="act-1Q-bi7" secondAttribute="centerX" id="iec-tv-to8"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Glq-i6-UTo"/>
                             </view>
