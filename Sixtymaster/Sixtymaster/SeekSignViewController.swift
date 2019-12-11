@@ -32,6 +32,12 @@ class SeekSignViewController: mViewController {
         
     }
  
+    @IBAction func homer(_ sender: Any) {
+        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                               let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+                               let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                               appDelegate.window?.rootViewController = HomeVc
+    }
     
 
     /*

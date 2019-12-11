@@ -691,6 +691,9 @@
                                     <constraint firstAttribute="width" constant="31" id="YAI-Qc-5If"/>
                                 </constraints>
                                 <state key="normal" image="house.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="homer:" destination="XmE-ZO-zd7" eventType="touchUpInside" id="ufm-fd-Lu6"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" id="G0x-rk-vfu">
                                 <rect key="frame" x="67" y="135" width="240" height="396"/>
