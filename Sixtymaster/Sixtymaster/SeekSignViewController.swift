@@ -9,6 +9,7 @@
 import UIKit
 
 class SeekSignViewController: mViewController {
+    @IBOutlet weak var changeimg: UIImageView!
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var img: UIImageView!
     var imgList = ["bad","laugh","saint"]
@@ -16,14 +17,29 @@ class SeekSignViewController: mViewController {
     @IBOutlet weak var typelabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view_1.isHidden = false
+        view2.isHidden = true
+
+        DispatchQueue.main.asyncAfter(deadline:DispatchTime.now()+3){
+            self.img.image = UIImage(named: "paoshandadilots")
+            self.mlabel.text = "開始求籤,請搖晃手機"
+            
+        }
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var mlabel: UILabel!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view_1: UIView!
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        self.img.isHidden = true
+        self.mlabel.text = ""
+        view2.isHidden = false
+
         var numberInt = Int.random(in: 1...60)
-//        img.image = UIImage(named: imgList[number])
-//        typelabel.text = typeList[number]
-        number.text = String(numberInt)
+//        self.changeimg.image = UIImage(named: imgList[numberInt])
+//        self.typelabel.text = typeList[numberInt]
+        self.number.text = String(numberInt)
     }
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         
@@ -32,6 +48,12 @@ class SeekSignViewController: mViewController {
         
     }
  
+    @IBAction func homer(_ sender: Any) {
+        let stroyboard = UIStoryboard(name: "Main", bundle: nil);
+                               let HomeVc = stroyboard.instantiateViewController(withIdentifier: "home")
+                               let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+                               appDelegate.window?.rootViewController = HomeVc
+    }
     
 
     /*
