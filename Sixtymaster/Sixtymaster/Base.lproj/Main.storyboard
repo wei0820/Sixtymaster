@@ -654,7 +654,7 @@
                                 <rect key="frame" x="37" y="20" width="300" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="act-1Q-bi7">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="act-1Q-bi7">
                                         <rect key="frame" x="29.5" y="20" width="241" height="223"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="JkX-Qy-r7W"/>
@@ -663,7 +663,7 @@
                                             <constraint firstAttribute="width" constant="241" id="vre-n2-HYL"/>
                                         </constraints>
                                     </imageView>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-bP-XoB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-bP-XoB">
                                         <rect key="frame" x="129" y="294" width="42" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="4cy-Sj-pJ6"/>
@@ -758,6 +758,9 @@
                                             <constraint firstAttribute="width" constant="224" id="TvU-4p-Kv2"/>
                                         </constraints>
                                         <state key="normal" title="開始擲筊"/>
+                                        <connections>
+                                            <action selector="startbtn:" destination="XmE-ZO-zd7" eventType="touchUpInside" id="vzD-N4-LSv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -790,7 +793,8 @@
                     <navigationItem key="navigationItem" id="Gmm-Pc-AFo"/>
                     <connections>
                         <outlet property="changeimg" destination="wdQ-K8-hMi" id="CPN-GO-cYJ"/>
-                        <outlet property="img" destination="nR7-6g-Xwh" id="d7D-GR-zRO"/>
+                        <outlet property="img" destination="nR7-6g-Xwh" id="vCx-f3-DH9"/>
+                        <outlet property="mimga" destination="act-1Q-bi7" id="i4d-Y3-Ijt"/>
                         <outlet property="mlabel" destination="5xf-Al-xoE" id="ZNv-2e-zcX"/>
                         <outlet property="number" destination="xoh-MX-gIA" id="Sgj-sM-zJ1"/>
                         <outlet property="typelabel" destination="RaU-bP-XoB" id="jOv-kK-0F2"/>
