@@ -711,7 +711,7 @@
                                 <rect key="frame" x="87.5" y="183.5" width="200" height="250"/>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" id="G0x-rk-vfu">
-                                <rect key="frame" x="67" y="135" width="240" height="396"/>
+                                <rect key="frame" x="67" y="135" width="240" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slip" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-K8-hMi">
@@ -751,15 +751,27 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d1-IU-445">
+                                        <rect key="frame" x="8" y="419" width="224" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="Imu-An-UJM"/>
+                                            <constraint firstAttribute="width" constant="224" id="TvU-4p-Kv2"/>
+                                        </constraints>
+                                        <state key="normal" title="開始擲筊"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="IE9-2K-9A6" firstAttribute="trailing" secondItem="0d1-IU-445" secondAttribute="trailing" constant="8" id="2ul-xR-UEu"/>
+                                    <constraint firstItem="0d1-IU-445" firstAttribute="leading" secondItem="IE9-2K-9A6" secondAttribute="leading" constant="8" id="8MQ-tP-1IN"/>
                                     <constraint firstItem="18v-u3-QYh" firstAttribute="centerX" secondItem="wdQ-K8-hMi" secondAttribute="centerX" id="BEc-9u-cts"/>
                                     <constraint firstItem="xoh-MX-gIA" firstAttribute="leading" secondItem="18v-u3-QYh" secondAttribute="leading" id="CZC-Oa-kVp"/>
                                     <constraint firstItem="RLJ-cI-osU" firstAttribute="leading" secondItem="xoh-MX-gIA" secondAttribute="leading" id="Puv-AT-qYV"/>
+                                    <constraint firstItem="0d1-IU-445" firstAttribute="top" secondItem="wdQ-K8-hMi" secondAttribute="bottom" constant="23" id="RlL-Ww-aNR"/>
                                     <constraint firstItem="xoh-MX-gIA" firstAttribute="top" secondItem="18v-u3-QYh" secondAttribute="bottom" constant="41" id="Z4V-a8-hmc"/>
                                     <constraint firstItem="wdQ-K8-hMi" firstAttribute="top" secondItem="IE9-2K-9A6" secondAttribute="top" id="hJR-bC-9Z4"/>
                                     <constraint firstItem="RLJ-cI-osU" firstAttribute="top" secondItem="xoh-MX-gIA" secondAttribute="bottom" constant="8" id="jHx-RJ-zoy"/>
+                                    <constraint firstItem="IE9-2K-9A6" firstAttribute="bottom" secondItem="0d1-IU-445" secondAttribute="bottom" constant="8" id="tz2-fV-a0n"/>
                                     <constraint firstItem="wdQ-K8-hMi" firstAttribute="centerX" secondItem="G0x-rk-vfu" secondAttribute="centerX" id="wtM-Mr-DKu"/>
                                     <constraint firstItem="18v-u3-QYh" firstAttribute="top" secondItem="IE9-2K-9A6" secondAttribute="top" constant="159" id="x2h-eI-8Vo"/>
                                 </constraints>
