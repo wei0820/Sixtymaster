@@ -16,9 +16,13 @@ class SeekSignViewController: mViewController {
     @IBOutlet weak var typelabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view_1.isHidden = false
+        view2.isHidden = true
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view_1: UIView!
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         var numberInt = Int.random(in: 1...60)
 //        img.image = UIImage(named: imgList[number])

@@ -674,7 +674,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="act-1Q-bi7" firstAttribute="top" secondItem="Glq-i6-UTo" secondAttribute="top" constant="20" id="ALG-Uf-UNc"/>
                                     <constraint firstItem="RaU-bP-XoB" firstAttribute="leading" secondItem="Glq-i6-UTo" secondAttribute="leading" constant="129" id="Lkp-gQ-UE3"/>
@@ -763,6 +763,8 @@
                         <outlet property="img" destination="act-1Q-bi7" id="b1M-bt-qYT"/>
                         <outlet property="number" destination="xoh-MX-gIA" id="Sgj-sM-zJ1"/>
                         <outlet property="typelabel" destination="RaU-bP-XoB" id="jOv-kK-0F2"/>
+                        <outlet property="view2" destination="G0x-rk-vfu" id="0pg-bj-uDc"/>
+                        <outlet property="view_1" destination="HZh-o1-oqu" id="XfM-p0-tGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cba-6w-8Ka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
