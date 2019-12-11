@@ -22,7 +22,7 @@ class SeekSignViewController: mViewController {
 
         DispatchQueue.main.asyncAfter(deadline:DispatchTime.now()+3){
             self.img.image = UIImage(named: "paoshandadilots")
-            self.mlabel.text = "開始求籤"
+            self.mlabel.text = "開始求籤,請搖晃手機"
             
         }
 
@@ -32,10 +32,14 @@ class SeekSignViewController: mViewController {
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view_1: UIView!
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        self.img.isHidden = true
+        self.mlabel.text = ""
+        view2.isHidden = false
+
         var numberInt = Int.random(in: 1...60)
-//        img.image = UIImage(named: imgList[number])
-//        typelabel.text = typeList[number]
-        number.text = String(numberInt)
+//        self.changeimg.image = UIImage(named: imgList[numberInt])
+//        self.typelabel.text = typeList[numberInt]
+        self.number.text = String(numberInt)
     }
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         
