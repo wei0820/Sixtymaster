@@ -35,7 +35,13 @@ class MapViewController: UIViewController, MGLMapViewDelegate,UITabBarDelegate {
 
     }
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
-        mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)
+        if(mapView.userLocation == nil && mapView.userLocation?.coordinate == nil){
+            mapview.setCenter(CLLocationCoordinate2DMake(25.034815, 121.564392), animated: false)
+
+        }else{
+            mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)
+
+        }
     }
   
     func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {

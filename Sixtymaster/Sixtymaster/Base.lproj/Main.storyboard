@@ -651,7 +651,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" id="HZh-o1-oqu">
-                                <rect key="frame" x="37" y="20" width="300" height="350"/>
+                                <rect key="frame" x="37" y="20" width="300" height="458"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="act-1Q-bi7">
@@ -683,6 +683,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e55-oW-lXi">
+                                        <rect key="frame" x="46" y="395" width="208" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -714,13 +719,6 @@
                                 <rect key="frame" x="67" y="135" width="240" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slip" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-K8-hMi">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="396"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="396" id="0e7-mM-rXK"/>
-                                            <constraint firstAttribute="width" constant="240" id="MHN-wa-ZPf"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18v-u3-QYh">
                                         <rect key="frame" x="98" y="159" width="44" height="21"/>
                                         <constraints>
@@ -762,6 +760,13 @@
                                             <action selector="startbtn:" destination="XmE-ZO-zd7" eventType="touchUpInside" id="vzD-N4-LSv"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slip" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-K8-hMi">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="396"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="396" id="0e7-mM-rXK"/>
+                                            <constraint firstAttribute="width" constant="240" id="MHN-wa-ZPf"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
