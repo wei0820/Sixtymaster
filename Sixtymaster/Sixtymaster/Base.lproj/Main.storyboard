@@ -607,7 +607,7 @@
                                     <action selector="btn_1:" destination="Mog-6V-mxF" eventType="touchUpInside" id="rrA-1e-gGg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
                                 <rect key="frame" x="141" y="544" width="91" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="HgW-9q-moX"/>
