@@ -560,7 +560,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irX-8b-LEY">
-                                <rect key="frame" x="128" y="295" width="119" height="142"/>
+                                <rect key="frame" x="37" y="294" width="119" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="142" id="acB-Yd-Zgm"/>
                                     <constraint firstAttribute="width" constant="119" id="cX2-ww-C8Y"/>
@@ -586,7 +586,7 @@
                                     <constraint firstAttribute="width" constant="300" id="U1a-p5-OB7"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Si-pOB">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Si-pOB">
                                 <rect key="frame" x="142" y="445" width="90" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Wej-P3-Swf"/>
@@ -607,8 +607,8 @@
                                     <action selector="btn_1:" destination="Mog-6V-mxF" eventType="touchUpInside" id="rrA-1e-gGg"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
-                                <rect key="frame" x="141" y="544" width="91" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOW-gt-VmC">
+                                <rect key="frame" x="246" y="341" width="91" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="HgW-9q-moX"/>
                                     <constraint firstAttribute="width" constant="91" id="KYw-PI-rJX"/>
@@ -623,14 +623,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="kZe-cg-DxU" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="37" id="3Yq-mq-tfy"/>
-                            <constraint firstItem="irX-8b-LEY" firstAttribute="top" secondItem="kZe-cg-DxU" secondAttribute="bottom" constant="-25" id="8MG-ov-jlJ"/>
-                            <constraint firstItem="irX-8b-LEY" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="128" id="GUh-96-LWm"/>
-                            <constraint firstItem="JOW-gt-VmC" firstAttribute="top" secondItem="GuY-Si-pOB" secondAttribute="bottom" constant="52" id="OCz-nX-X2I"/>
+                            <constraint firstItem="irX-8b-LEY" firstAttribute="top" secondItem="kZe-cg-DxU" secondAttribute="bottom" constant="-26" id="8MG-ov-jlJ"/>
+                            <constraint firstItem="irX-8b-LEY" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="37" id="GUh-96-LWm"/>
+                            <constraint firstItem="JOW-gt-VmC" firstAttribute="top" secondItem="GuY-Si-pOB" secondAttribute="bottom" constant="-151" id="OCz-nX-X2I"/>
                             <constraint firstItem="kZe-cg-DxU" firstAttribute="top" secondItem="Odq-RO-egI" secondAttribute="top" constant="20" id="Q58-Ut-hmI"/>
-                            <constraint firstItem="JOW-gt-VmC" firstAttribute="leading" secondItem="GuY-Si-pOB" secondAttribute="leading" constant="-1" id="SCD-3B-LFE"/>
-                            <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="irX-8b-LEY" secondAttribute="trailing" constant="128" id="iOY-ce-CBY"/>
+                            <constraint firstItem="JOW-gt-VmC" firstAttribute="leading" secondItem="GuY-Si-pOB" secondAttribute="leading" constant="104" id="SCD-3B-LFE"/>
+                            <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="irX-8b-LEY" secondAttribute="trailing" constant="219" id="iOY-ce-CBY"/>
                             <constraint firstItem="GuY-Si-pOB" firstAttribute="leading" secondItem="Odq-RO-egI" secondAttribute="leading" constant="142" id="lFs-vT-rJP"/>
-                            <constraint firstItem="GuY-Si-pOB" firstAttribute="top" secondItem="irX-8b-LEY" secondAttribute="bottom" constant="8" id="v0Y-pa-2q4"/>
+                            <constraint firstItem="GuY-Si-pOB" firstAttribute="top" secondItem="irX-8b-LEY" secondAttribute="bottom" constant="9" id="v0Y-pa-2q4"/>
                             <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="kZe-cg-DxU" secondAttribute="trailing" constant="38" id="wkD-WC-LET"/>
                             <constraint firstItem="Odq-RO-egI" firstAttribute="trailing" secondItem="GuY-Si-pOB" secondAttribute="trailing" constant="143" id="xkt-ra-in6"/>
                         </constraints>
