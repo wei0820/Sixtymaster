@@ -59,11 +59,8 @@ class SeekSignViewController: mViewController {
         }else{
                     self.img.isHidden = true
                     self.mlabel.text = ""
-                    view2.isHidden = false
-
-                    var numberInt = Int.random(in: 1...60)
-    
-                    self.number.text = String(numberInt)
+                    view2.isHidden = false    
+                    self.number.text = String( Int.random(in: 1...60))
         }
     }
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {

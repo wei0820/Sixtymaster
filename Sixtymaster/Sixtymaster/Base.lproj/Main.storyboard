@@ -715,7 +715,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pray_3_1" translatesAutoresizingMaskIntoConstraints="NO" id="nR7-6g-Xwh">
                                 <rect key="frame" x="87.5" y="183.5" width="200" height="250"/>
                             </imageView>
-                            <view hidden="YES" contentMode="scaleToFill" id="G0x-rk-vfu">
+                            <view contentMode="scaleToFill" id="G0x-rk-vfu">
                                 <rect key="frame" x="67" y="135" width="240" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
